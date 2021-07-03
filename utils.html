@@ -1,0 +1,1100 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>utils &mdash; pkrig2 20210508 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="skin_tools" href="skin_tools.html" />
+    <link rel="prev" title="naming_tools" href="naming_tools.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pkrig2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pkrig2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="core.html">core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="naming_tools.html">naming_tools</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skin_tools.html">skin_tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_base.html">rig_base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_fk.html">genrig_fk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_spline_fk.html">genrig_spline_fk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_string_ik.html">genrig_string_ik</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_main_group.html">rig_main_group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_root.html">rig_root</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_head.html">facerig_head</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_eye.html">facerig_eye</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_eyebrow.html">facerig_eyebrow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_mouth.html">facerig_mouth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_nose.html">facerig_nose</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pkrig2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">pkrig2</a> &raquo;</li>
+        
+      <li>utils</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/utils.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pkrig2.utils">
+<span id="utils"></span><h1>utils<a class="headerlink" href="#module-pkrig2.utils" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pkrig2.utils.accumulate_xform_matrices">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">accumulate_xform_matrices</code><span class="sig-paren">(</span><em>hierarchy</em>, <em>attr_prefix</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.accumulate_xform_matrices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses multMatrix to accumulate transformation matrices by the order of
+the given hierarchy(from child to parent).
+Translate, rotate and scale attrbutes are added with the given
+attr_prefix to the first node in the given hierarchy.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>hierarchy</strong> (<em>tuple</em>) – An order of prc.Dag from child to parent.</li>
+<li><strong>attr_prefix</strong> (<em>str</em>) – Prefix of output transform attributes.
+attr_prefix is set to ‘local’ if it has not been defined.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A multMatrix node.
+prc.Node: A decomposeMatrix node.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">prc.Node</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.add_gimbal_helper">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">add_gimbal_helper</code><span class="sig-paren">(</span><em>controller</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.add_gimbal_helper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds gimbal helper to the given controller.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>controller</strong> (<em>prc.Dag</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A gimbal helper.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.add_offset_controller">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">add_offset_controller</code><span class="sig-paren">(</span><em>ctrl</em>, <em>attr</em>, <em>drivens</em>, <em>mult</em>, <em>dv</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.add_offset_controller" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes the given ctrl.attr(attr) control the additional values to
+the given drivens e.g., for stretchy FK that uses offset translation.</p>
+<p>The given attr is created if it doesn’t exist on the given ctrl.
+[attr]Amper is created at ctrl’s shape node as a multiplier.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ctrl</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>attr</strong> (<em>str</em>) – </li>
+<li><strong>drivens</strong> (<em>list</em>) – A list of prc.Attr(s)</li>
+<li><strong>mult</strong> (<em>float</em>) – A default value of multiplier.</li>
+<li><strong>dv</strong> (<em>float</em>) – A default value.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A multDoubleLinear.
+prc.Node: A addDoubleLinear.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">prc.Node</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.add_shape_vis_controller">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">add_shape_vis_controller</code><span class="sig-paren">(</span><em>ctrl</em>, <em>target</em>, <em>attrname</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.add_shape_vis_controller" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds the given ‘attrname’ to ctrl.shape to control the visibility of
+the shape node of the given target, if the given ctrl doesn’t have
+a shape, adds to itself instead.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>ctrl</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>target</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>attrname</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Returns:</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.add_space_blender">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">add_space_blender</code><span class="sig-paren">(</span><em>target_nodes_and_attr_names</em>, <em>cons_func</em>, <em>constrained_node</em>, <em>controller</em>, <em>attr_name</em>, <em>name</em>, <em>desc</em>, <em>index</em>, <em>side</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.add_space_blender" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates space blender using a constraint node.</p>
+<dl class="docutils">
+<dt>Ex:</dt>
+<dd><dl class="first last docutils">
+<dt>add_space_blender(</dt>
+<dd>[{local_ori: ‘local’}, {head_ori: ‘head’}, {world_ori: ‘world’}],
+prc.orient_constraint, eye_ctrl_ori, eye_ctrl, ‘orientTo’, ‘Spec’,
+‘EyeRigA’, None, prc.Side.left)</dd>
+</dl>
+</dd>
+</dl>
+<p>Script uses local_ori, head_ori and world_ori nodes as orient constrain
+targets.
+Adds an orientTo attribute to eye_ctrl with ‘local’, ‘head’ and ‘world’
+as its enum values.
+Adds orient constraint node to eye_ctrl_ori node.
+Uses condition nodes to control constrain weights.
+Names the created condition nodes with the given info.
+The name part is generated with this format:</p>
+<blockquote>
+<div>{name}{enum_attr}{constrain_type}{controller_type}</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>target_nodes_and_attr_names</strong> (<em>list</em>) – A list of dictionaries that have
+target node as keys and attribute enum names as values.</li>
+<li><strong>(</strong><strong>prc.orient_constraint/prc.point_constraint/</strong> (<em>cons_func</em>) – prc.parent_constraint):</li>
+<li><strong>constrained_node</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>controller</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>attr_name</strong> (<em>str</em>) – </li>
+<li><strong>name</strong> (<em>str</em>) – Is added to the beginning part of the name part.</li>
+<li><strong>desc</strong> (<em>str</em>) – Is added to the end part of the name part, mostly used as
+a module description.</li>
+<li><strong>index</strong> (<em>None/int/str</em>) – </li>
+<li><strong>side</strong> (<em>prc.Side</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A list of named condition nodes(prc.Node).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.add_two_ways_clamp">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">add_two_ways_clamp</code><span class="sig-paren">(</span><em>driver</em>, <em>minr</em>, <em>maxr</em>, <em>ming</em>, <em>maxg</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.add_two_ways_clamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clamps the driver, using min/max values, to two channels.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>driver</strong> (<em>prc.Attr</em>) – </li>
+<li><strong>minr</strong> (<em>float</em>) – A min value of R channel.</li>
+<li><strong>maxr</strong> (<em>float</em>) – A max value of R channel.</li>
+<li><strong>ming</strong> (<em>float</em>) – A min value of G channel.</li>
+<li><strong>maxg</strong> (<em>float</em>) – A max value of G channel.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A created clamp node.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">prc.Node</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.add_udoipp">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">add_udoipp</code><span class="sig-paren">(</span><em>ctrl</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.add_udoipp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds Up/Down, Out/In and Pull/Push controller to the given ctrl.
+ctrl.ty controls Up/Down, ctrl.tx controls Out/In and ctrl.tz controls
+Pull/Push.
+Amplifiers for each channel are added to shape node of the given controller.</p>
+<p>Uses a clamp node to extract postive/negative values from ty and tx.
+ty+ = up
+ty- = down
+tx+ = out
+tx- = in
+tz+ = pull
+tz- = push</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ctrl</strong> (<em>prc.Dag</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Up/Down clamp node.
+prc.Node: Out/In clamp node.
+prc.Node: Up multiplier.
+prc.Node: Down multiplier.
+prc.Node: Out multiplier.
+prc.Node: In multiplier.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">prc.Node</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.add_zero_group">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">add_zero_group</code><span class="sig-paren">(</span><em>dag</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.add_zero_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a zero group to the given dag node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dag</strong> (<em>prc.Dag</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The created zero group.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.attr_amper">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">attr_amper</code><span class="sig-paren">(</span><em>driver</em>, <em>driven</em>, <em>dv</em>, <em>amp_attr</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.attr_amper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds an attribute amplifier to the driver that drives
+the driven attribute. If the driver node has shape the amp_attr is added
+to its shape else is added to the driver node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>driver</strong> (<em>prc.Attr</em>) – </li>
+<li><strong>driven</strong> (<em>prc.Attr/None</em>) – None if just want to create a multiplier.</li>
+<li><strong>dv</strong> (<em>float</em>) – A default value of the multiplier.</li>
+<li><strong>amp_attr</strong> (<em>str/None</em>) – A name of the amp attribute.
+If this is None the amp_attr is not added to the driver node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A multDoubleLinear node.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">prc.Node</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.attr_clamper">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">attr_clamper</code><span class="sig-paren">(</span><em>driver</em>, <em>driven</em>, <em>min_value</em>, <em>max_value</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.attr_clamper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a clamp node to clamp value of the driver regarding the given
+min/max_value.
+The output from clamp node connects to the driven if it’s given.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>driver</strong> (<em>prc.Attr</em>) – </li>
+<li><strong>driven</strong> (<em>prc.Attr</em>) – </li>
+<li><strong>min_value</strong> (<em>float</em>) – </li>
+<li><strong>max_value</strong> (<em>float</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A clamp node.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">prc.Node</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.build_curve_from_data">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">build_curve_from_data</code><span class="sig-paren">(</span><em>curve_data</em>, <em>dag</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.build_curve_from_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses curve cache attribute to build a NURBs curve shape
+from the data given from read_nurbs_curve
+and attache to the given xform.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>curve_data</strong> (<em>dict</em>) – Data given from read_nurbs_curve</li>
+<li><strong>dag</strong> (<em>prc.Dag</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The created shape.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">prc.Dag</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.build_local_joint_hierarchy">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">build_local_joint_hierarchy</code><span class="sig-paren">(</span><em>root_name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.build_local_joint_hierarchy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds a hierarchy of local joints from the given root.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>root_name</strong> (<em>str</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A list of created joints(prc.Joint).</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.create_aim_joint_chain">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">create_aim_joint_chain</code><span class="sig-paren">(</span><em>root_pos</em>, <em>tip_pos</em>, <em>aim_axis</em>, <em>up_axis</em>, <em>up_vector</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.create_aim_joint_chain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a joint chain of aim joints.
+The created root joint is placed at the position of the given root node.
+The created tip joint is placed at the position of the given tip node.
+The created joint chain aims to the given tip node with the given aim info.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>root_pos</strong> (<em>tuple</em>) – Root position.</li>
+<li><strong>tip_pos</strong> (<em>tuple</em>) – Tip position.</li>
+<li><strong>aim_axis</strong> (<em>tuple</em>) – A tuple of three values.</li>
+<li><strong>up_axis</strong> (<em>tuple</em>) – A tuple of three values.</li>
+<li><strong>up_vector</strong> (<em>tuple</em>) – A tuple of three values.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The created root joint.
+prc.Joint: The created tip joint.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">prc.Joint</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.create_controller_groups">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">create_controller_groups</code><span class="sig-paren">(</span><em>curve_param</em>, <em>group_types</em>, <em>compo</em>, <em>desc</em>, <em>index</em>, <em>side</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.create_controller_groups" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a controller with its parent groups.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>curve_param</strong> (<em>prc.Cp</em>) – </li>
+<li><strong>group_types</strong> (<em>list</em>) – A list of group types(str).</li>
+<li><strong>compo</strong> (<em>str</em>) – </li>
+<li><strong>desc</strong> (<em>str</em>) – </li>
+<li><strong>index</strong> (<em>int</em>) – </li>
+<li><strong>side</strong> (<em>prc.Side</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A controller.
+list: A list of groups(prc.Dag).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">prc.Dag</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.create_controller_with_xform_cursor">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">create_controller_with_xform_cursor</code><span class="sig-paren">(</span><em>shape</em>, <em>compo</em>, <em>index</em>, <em>side</em>, <em>mod_name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.create_controller_with_xform_cursor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a controller with a series of parent groups.
+Cursor dedicates how far the controller is moved away from the root group.
+Uses Mult Matrix and Decompose Matrix to accumulate transformations
+from the controller to the root group.
+Attributes cursorTranslateXYZ are created to the controller to contain
+the outputs of the accumulation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>shape</strong> (<em>prc.CurveParam</em>) – </li>
+<li><strong>compo</strong> (<em>str</em>) – A name of the current rig component.</li>
+<li><strong>index</strong> (<em>str/int</em>) – An index of current component.</li>
+<li><strong>side</strong> (<em>str/prc.Side</em>) – A side of current component.</li>
+<li><strong>mod_name</strong> (<em>str</em>) – A name of module concate with its description.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">prc.Dag: An offset group.
+prc.Dag: A constrain group.
+prc.Dag: A zero group.
+prc.Node: A multiply matrix node.
+prc.Node: A decompose matrix node.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">prc.Controller</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.create_joint_and_its_zero_at">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">create_joint_and_its_zero_at</code><span class="sig-paren">(</span><em>dag</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.create_joint_and_its_zero_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a joint and its zero group at the position of
+the given transform.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dag</strong> (<em>prc.Dag</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">prc.Dag: A zero group.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">prc.Joint</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.create_joint_at">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">create_joint_at</code><span class="sig-paren">(</span><em>dag</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.create_joint_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a joint at the position of the given transform.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dag</strong> (<em>prc.Dag</em>) – </td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Kwargs:</dt>
+<dd>t (bool): Apply freeze translate.
+r (bool): Apply freeze rotate.
+s (bool): Apply freeze scale.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">prc.Joint</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.create_local_skin_joint_at">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">create_local_skin_joint_at</code><span class="sig-paren">(</span><em>dag</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.create_local_skin_joint_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a local skin joint at the position of the given DAG object.
+Local Skin Joint is a joint that operates with a skin cluster at the origin.</p>
+<p>Creates a joint and connects xform attrbutes from the given DAG
+to the created joint.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dag</strong> (<em>prc.Dag</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">prc.Joint</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.create_pos">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">create_pos</code><span class="sig-paren">(</span><em>nurb</em>, <em>dag</em>, <em>normal_to</em>, <em>u_to</em>, <em>v_to</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.create_pos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses fourByFourMatrix, multMatrix and decomposeMatrix nodes to
+get a rivet likes rig to the given DAG node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>nurb</strong> (<em>prc.Dag</em>) – A transform node of the NURBs surface.</li>
+<li><strong>dag</strong> (<em>prc.Dag</em>) – As a rivet node.</li>
+<li><strong>normal_to</strong> (<em>int</em>) – 0, 1 or 2 as a row of Matrix that normalized normal
+connects to.</li>
+<li><strong>u_to</strong> (<em>int</em>) – 0, 1 or 2 as a row of Matrix that normalized tangent U
+connects to.</li>
+<li><strong>v_to</strong> (<em>int</em>) – 0, 1 or 2 as a row of Matrix that normalized tangent V
+connects to.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">pointOnSurfaceInfo
+prc.Node: fourByFourMatrix
+prc.Node: multMatrix
+prc.Node: decomposeMatrix</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">prc.Node</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.do_positions_match">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">do_positions_match</code><span class="sig-paren">(</span><em>dag1</em>, <em>dag2</em>, <em>tol=0.001</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.do_positions_match" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compares the positions of the given dag1 and dag2.
+Returns True if the positions match with the given tolerance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dag1</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>dag2</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>tol</strong> (<em>float</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">True if the poistions match else False.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.dup_and_clean_unused_intermediate_shape">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">dup_and_clean_unused_intermediate_shape</code><span class="sig-paren">(</span><em>xform</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.dup_and_clean_unused_intermediate_shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Duplicates a given xform and remove
+all related unused intermediate shapes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>xform</strong> (<em>prc.Dag</em>) – A transform node.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A duplicated transform node.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.get_joint_heirarchy_with_sibling_first">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">get_joint_heirarchy_with_sibling_first</code><span class="sig-paren">(</span><em>root_name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.get_joint_heirarchy_with_sibling_first" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds a hierarchy of joints from the given root to the child most with
+the sibling nodes first.
+This function is used to build a local skin joint hierarchy.</p>
+<p>Ex.
+root</p>
+<blockquote>
+<div><a href="#id1"><span class="problematic" id="id2">|</span></a>- head
+<a href="#id3"><span class="problematic" id="id4">|</span></a>- left_eye
+|   <a href="#id5"><span class="problematic" id="id6">|</span></a>- left_lid_a
+|   <a href="#id7"><span class="problematic" id="id8">`</span></a>- left_lid_b
+<a href="#id9"><span class="problematic" id="id10">`</span></a>- right_eye</div></blockquote>
+<p>returns [‘<a href="#id11"><span class="problematic" id="id12">|</span></a>head’, ‘<a href="#id13"><span class="problematic" id="id14">|</span></a>head|left_eye’, ‘<a href="#id15"><span class="problematic" id="id16">|</span></a>head|left_eye|left_lid_a’,
+‘<a href="#id17"><span class="problematic" id="id18">|</span></a>head|left_eye|left_lid_b’, ‘<a href="#id19"><span class="problematic" id="id20">|</span></a>head|right_eye’]</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>root_name</strong> (<em>str</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A list of joint’s full path names(str).</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.get_param_of_closest_point_on_curve">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">get_param_of_closest_point_on_curve</code><span class="sig-paren">(</span><em>curve</em>, <em>dag</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.get_param_of_closest_point_on_curve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets curve paramter of the given curve that has the closest
+distant to the given dag.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>curve</strong> (<em>prc.Dag</em>) – Its shape has to be NURBs curve.</li>
+<li><strong>dag</strong> (<em>prc.Dag</em>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Returns</dt>
+<dd>float: A curve paramter.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.get_param_of_closest_point_on_surface">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">get_param_of_closest_point_on_surface</code><span class="sig-paren">(</span><em>nurb</em>, <em>dag</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.get_param_of_closest_point_on_surface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets surface paramters of the given nurb that has the closest
+distant to the given dag.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>nurb</strong> (<em>prc.Dag</em>) – Its shape has to be NURBs surface.</li>
+<li><strong>dag</strong> (<em>prc.Dag</em>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Returns</dt>
+<dd>tuple: U and V parameters.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.get_point_at_surface_param">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">get_point_at_surface_param</code><span class="sig-paren">(</span><em>nurb</em>, <em>u</em>, <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.get_point_at_surface_param" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets world position at the given surface parameters.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>nurb</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>u</strong> (<em>float</em>) – </li>
+<li><strong>v</strong> (<em>float</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A world space vector.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tuple</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.m_matrix_to_tuple">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">m_matrix_to_tuple</code><span class="sig-paren">(</span><em>mat</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.m_matrix_to_tuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translates om.MMatrix to a tuple.
+Ex.</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>(</dt>
+<dd>(1, 0, 0, 0),
+(0, 1, 0, 0),
+(0, 0, 1, 0),
+(0, 0, 0, 1),</dd>
+</dl>
+<p>)</p>
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mat</strong> (<em>om.MMatrix</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tuple</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.read_nurbs_curve">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">read_nurbs_curve</code><span class="sig-paren">(</span><em>dag</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.read_nurbs_curve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates data from a NURBs curve.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dag</strong> (<em>prc.Dag</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A dictionary of curve’s degree, form, knots and cv positions.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.remap_to_blend_shape_driver">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">remap_to_blend_shape_driver</code><span class="sig-paren">(</span><em>driver</em>, <em>driven_node</em>, <em>attr_name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.remap_to_blend_shape_driver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses a remap node to remap the given driver to 0 to max,
+creates an attr_name at the driven_node,
+creates a max attribute at the driven_node to control the max value,
+connects the remap output to the driven_node.attr_name.</p>
+<p>The max attribute is named as attrNameMax</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>driver</strong> (<em>prc.Attr</em>) – </li>
+<li><strong>driven_node</strong> (<em>prc.Node</em>) – </li>
+<li><strong>attr_name</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A remap node.
+prc.Attr: An output attribute.
+prc.Attr: A max attribute.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">prc.Node</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.rotate_between_two_objects">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">rotate_between_two_objects</code><span class="sig-paren">(</span><em>obj</em>, <em>start_obj</em>, <em>end_obj</em>, <em>weight</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.rotate_between_two_objects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets rotation of the given obj to weighted rotate between
+start_obj and end_obj with the given weight.
+If the given weight is 0 the given obj is oriented to start_obj.
+If the given weight is 1 the given obj is oriented to end_obj.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>obj</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>start_obj</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>end_obj</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>weight</strong> (<em>float</em>) – Parameter between 0.0 and 1.0</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.rotate_by_two_vectors">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">rotate_by_two_vectors</code><span class="sig-paren">(</span><em>dag</em>, <em>aim_axis</em>, <em>up_axis</em>, <em>aim_vector</em>, <em>up_vector</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.rotate_by_two_vectors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Aligns aim_axis(axis) of the given DAG to the given
+aim_vector, uses up_axis(axis) as an up axis to the given
+up_vector.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dag</strong> (<em>prc.Dag</em>) – A transform node.</li>
+<li><strong>aim_axis</strong> (<em>tuple</em>) – A tuple of three values.</li>
+<li><strong>up_axis</strong> (<em>tuple</em>) – A tuple of three values.</li>
+<li><strong>aim_vector</strong> (<em>tuple</em>) – A tuple of three values.</li>
+<li><strong>up_vector</strong> (<em>tuple</em>) – A tuple of three values.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A list of rotatation values(floats).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.separate_positive_negative_values">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">separate_positive_negative_values</code><span class="sig-paren">(</span><em>driver</em>, <em>drivennode</em>, <em>plus_attrstr</em>, <em>minus_attrstr</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.separate_positive_negative_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses clamp node to separate postive and negative values
+of the given driver to two channels.
+Adds the given plus_attrstr and minus_attrstr to the given drivennode.
+Connects the output R and G to plus_attrstr and minus_attrstr respectively.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>driver</strong> (<em>prc.Attr</em>) – </li>
+<li><strong>drivennode</strong> (<em>prc.Dag</em>) – A node that output attribute will be added to.</li>
+<li><strong>plus_attrstr</strong> (<em>str</em>) – An attribute name of positive values.</li>
+<li><strong>minus_attrstr</strong> (<em>str</em>) – An attribute name of negative values.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A clamp node.
+prc.Node: A multDoubleLinear node.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">prc.Node</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.utils.slerp">
+<code class="descclassname">pkrig2.utils.</code><code class="descname">slerp</code><span class="sig-paren">(</span><em>quat_a</em>, <em>quat_b</em>, <em>weight</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.utils.slerp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds slerp between the given quat_a and quat_b with the given weight.
+The original code is from
+<a class="reference external" href="https://github.com/chadmv/cmt/blob/master/scripts/cmt/rig/swingtwist.py">https://github.com/chadmv/cmt/blob/master/scripts/cmt/rig/swingtwist.py</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>quat_a</strong> (<em>om.MQuaternion</em>) – </li>
+<li><strong>quat_b</strong> (<em>om.MQuaternion</em>) – </li>
+<li><strong>weight</strong> (<em>float</em>) – Parameter between 0.0 and 1.0</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">om.MQuaternion</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="skin_tools.html" class="btn btn-neutral float-right" title="skin_tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="naming_tools.html" class="btn btn-neutral float-left" title="naming_tools" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, peck
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

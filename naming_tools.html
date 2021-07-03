@@ -1,0 +1,415 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>naming_tools &mdash; pkrig2 20210508 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="utils" href="utils.html" />
+    <link rel="prev" title="core" href="core.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pkrig2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pkrig2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="core.html">core</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">naming_tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skin_tools.html">skin_tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_base.html">rig_base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_fk.html">genrig_fk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_spline_fk.html">genrig_spline_fk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_string_ik.html">genrig_string_ik</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_main_group.html">rig_main_group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_root.html">rig_root</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_head.html">facerig_head</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_eye.html">facerig_eye</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_eyebrow.html">facerig_eyebrow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_mouth.html">facerig_mouth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_nose.html">facerig_nose</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pkrig2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">pkrig2</a> &raquo;</li>
+        
+      <li>naming_tools</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/naming_tools.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pkrig2.naming_tools">
+<span id="naming-tools"></span><h1>naming_tools<a class="headerlink" href="#module-pkrig2.naming_tools" title="Permalink to this headline">¶</a></h1>
+<p>A set of functions to manipulate a name of maya node
+regarding the Naming Convention.</p>
+<p>Naming Convention:
+[Name]_[Index]_[Side]_[Type]
+CompoDesc(_[0-9])(_L|R)_Type</p>
+<p>Example:
+Root_Ctrl
+LegFk_L_Ctrl
+Index_1_L_Jnt
+Spine_1_Jnt</p>
+<dl class="function">
+<dt id="pkrig2.naming_tools.add_desc">
+<code class="descclassname">pkrig2.naming_tools.</code><code class="descname">add_desc</code><span class="sig-paren">(</span><em>old_name</em>, <em>desc</em>, <em>type_</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.naming_tools.add_desc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Capitalizes the first charadter of desc then adds to the first part of
+the old_name. Old type will be replaced if <a href="#id1"><span class="problematic" id="id2">type_</span></a> is defined.</p>
+<p>If the old component ends with Geo, script will keep Geo as the last
+part, e.g., add_desc(‘HairGeo_Grp’, ‘Guide’, None) -&gt; HairGuideGeo_Grp</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>old_name</strong> (<em>str</em>) – An old name.</li>
+<li><strong>desc</strong> (<em>str</em>) – A description.</li>
+<li><strong>type</strong> (<em>str/None</em>) – A new type.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><dl class="docutils">
+<dt>A new name with description added. The old type is replaced if</dt>
+<dd><p class="first last"><a href="#id3"><span class="problematic" id="id4">type_</span></a> is defined.</p>
+</dd>
+</dl>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.naming_tools.capfirst">
+<code class="descclassname">pkrig2.naming_tools.</code><code class="descname">capfirst</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.naming_tools.capfirst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Capitalizes the first character of the given string.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A string with capitalized the first character.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.naming_tools.change_type">
+<code class="descclassname">pkrig2.naming_tools.</code><code class="descname">change_type</code><span class="sig-paren">(</span><em>old_name</em>, <em>type_</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.naming_tools.change_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes type of the given old_name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>old_name</strong> (<em>str</em>) – An old name.</li>
+<li><strong>type</strong> (<em>str</em>) – A new type.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A new name with the given type.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.naming_tools.compose">
+<code class="descclassname">pkrig2.naming_tools.</code><code class="descname">compose</code><span class="sig-paren">(</span><em>compo</em>, <em>index</em>, <em>side</em>, <em>type_</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.naming_tools.compose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Composes given tokens to a node name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>compo</strong> (<em>str</em>) – A component.</li>
+<li><strong>index</strong> (<em>str/None/int</em>) – An index.</li>
+<li><strong>side</strong> (<em>str/None</em>) – A side.</li>
+<li><strong>type</strong> (<em>str</em>) – A node type.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A composed name.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.naming_tools.compose_attr_name">
+<code class="descclassname">pkrig2.naming_tools.</code><code class="descname">compose_attr_name</code><span class="sig-paren">(</span><em>compo</em>, <em>index</em>, <em>side</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.naming_tools.compose_attr_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Composes the given arguments to the attribute name.
+lowerCamelCase is used to all attribute names in pkrig2.</p>
+<p>Ex. compose_attr_name(‘eyebrow’, 1, prc.Side.left) -&gt; leftEyebrow1.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>compo</strong> (<em>str</em>) – </li>
+<li><strong>index</strong> (<em>int/None</em>) – </li>
+<li><strong>side</strong> (<em>str/None</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A composed name(str).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.naming_tools.is_legal">
+<code class="descclassname">pkrig2.naming_tools.</code><code class="descname">is_legal</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.naming_tools.is_legal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks is the given name legal to pkrig.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True if the name is legal to the framework else False.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.naming_tools.lowfirst">
+<code class="descclassname">pkrig2.naming_tools.</code><code class="descname">lowfirst</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.naming_tools.lowfirst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lowercase the first character of the given string.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A string with lowercased the first character.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.naming_tools.tokenize">
+<code class="descclassname">pkrig2.naming_tools.</code><code class="descname">tokenize</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.naming_tools.tokenize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses ‘_’ to tokenize the given name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – A node name.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Component(str), index(None/str), side(None/str) and type_(str)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="utils.html" class="btn btn-neutral float-right" title="utils" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="core.html" class="btn btn-neutral float-left" title="core" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, peck
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

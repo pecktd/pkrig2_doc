@@ -1,0 +1,494 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rig_base &mdash; pkrig2 20210508 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="genrig_fk" href="genrig_fk.html" />
+    <link rel="prev" title="skin_tools" href="skin_tools.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pkrig2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pkrig2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="core.html">core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="naming_tools.html">naming_tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skin_tools.html">skin_tools</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">rig_base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_fk.html">genrig_fk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_spline_fk.html">genrig_spline_fk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_string_ik.html">genrig_string_ik</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_main_group.html">rig_main_group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_root.html">rig_root</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_head.html">facerig_head</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_eye.html">facerig_eye</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_eyebrow.html">facerig_eyebrow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_mouth.html">facerig_mouth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_nose.html">facerig_nose</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pkrig2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">pkrig2</a> &raquo;</li>
+        
+      <li>rig_base</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/rig_base.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pkrig2.rig_base">
+<span id="rig-base"></span><h1>rig_base<a class="headerlink" href="#module-pkrig2.rig_base" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pkrig2.rig_base.BaseRig">
+<em class="property">class </em><code class="descclassname">pkrig2.rig_base.</code><code class="descname">BaseRig</code><span class="sig-paren">(</span><em>meta_node</em>, <em>mod_name</em>, <em>desc</em>, <em>write_side</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.rig_base.BaseRig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A base class to all rigging modules in pkrig.
+A BaseRig object is initialized with a group as a Meta Node.
+All conponents those are created using init_node method are connected
+to the Meta Node as a component of the Rigging Module.</p>
+<p>The concept of the Meta Node is a collector of all nodes
+in the rigging module.</p>
+<p>The created Meta Node is mostly used as a Ctrl_Grp.
+Ex.
+armrig = BaseRig(‘ArmRig’, ‘A’, True)
+# ArmRig_L_Grp is initialized as a Meta Node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>meta_node</strong> (<em>prc.Dag/None</em>) – A DAG node is used as a meta node.
+If None, an empty group is created as a meta node.</li>
+<li><strong>mod_name</strong> (<em>str</em>) – A module name that is applied to the end of the
+component part. Use ‘’ if don’t want to assign module name.</li>
+<li><strong>desc</strong> (<em>str</em>) – A descriptive word to add to all nodes in the module.</li>
+<li><strong>write_side</strong> (<em>bool</em>) – If True side of the rigging node will be written
+as a rigging attribute name.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="pkrig2.rig_base.BaseRig.meta">
+<code class="descname">meta</code><a class="headerlink" href="#pkrig2.rig_base.BaseRig.meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>A Meta Node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.rig_base.BaseRig.mod_name">
+<code class="descname">mod_name</code><a class="headerlink" href="#pkrig2.rig_base.BaseRig.mod_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A module name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.rig_base.BaseRig.desc">
+<code class="descname">desc</code><a class="headerlink" href="#pkrig2.rig_base.BaseRig.desc" title="Permalink to this definition">¶</a></dt>
+<dd><p>A description of this module.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.rig_base.BaseRig.mod_desc">
+<code class="descname">mod_desc</code><a class="headerlink" href="#pkrig2.rig_base.BaseRig.mod_desc" title="Permalink to this definition">¶</a></dt>
+<dd><p>A mode_name + desc to be used as a component name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.rig_base.BaseRig.write_side">
+<code class="descname">write_side</code><a class="headerlink" href="#pkrig2.rig_base.BaseRig.write_side" title="Permalink to this definition">¶</a></dt>
+<dd><p>To specify that the sides of the nodes
+belong to this Meta Node are used in the attribute’s name
+in the meta node.
+Ex. If True, Corner_L_Ctrl.message &gt;&gt; CtrlMthRig_Grp.Corner_L_Ctrl;
+if False, Arm_L_Ctrl.message &gt;&gt; CtrlArmRig_Grp.Arm_Ctrl</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.rig_base.BaseRig.add_attr">
+<code class="descname">add_attr</code><span class="sig-paren">(</span><em>node</em>, <em>compo</em>, <em>index</em>, <em>side</em>, <em>type_</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.rig_base.BaseRig.add_attr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses the given compo, index, side, <a href="#id1"><span class="problematic" id="id2">type_</span></a> to create an attribute
+to the meta node.
+The given side is omitted if write_side is False.
+Connects .message of the given node to the created attribute.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>node</strong> (<em>prc.Node</em>) – A pkring node.</li>
+<li><strong>compo</strong> (<em>str</em>) – A name of a component.</li>
+<li><strong>index</strong> (<em>None/int</em>) – As an index of the given node.</li>
+<li><strong>side</strong> (<em>None/prc.Side</em>) – As a side of the given node.</li>
+<li><strong>type</strong> (<em>str</em>) – As a type of the given node.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.rig_base.BaseRig.gen_attr_name">
+<code class="descname">gen_attr_name</code><span class="sig-paren">(</span><em>compo</em>, <em>index</em>, <em>side</em>, <em>type_</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.rig_base.BaseRig.gen_attr_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates an attribute name from the given info.
+Omit the side if write_side is False.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>compo</strong> (<em>str</em>) – A name of a component.</li>
+<li><strong>index</strong> (<em>None/int</em>) – As an index of the given node.</li>
+<li><strong>side</strong> (<em>None/prc.Side</em>) – As a side of the given node.</li>
+<li><strong>type</strong> (<em>str</em>) – As a type of the given node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The module attribute name(str).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.rig_base.BaseRig.get_all_nodes_in_type">
+<code class="descname">get_all_nodes_in_type</code><span class="sig-paren">(</span><em>type_</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.rig_base.BaseRig.get_all_nodes_in_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.rig_base.BaseRig.get_node">
+<code class="descname">get_node</code><span class="sig-paren">(</span><em>compo</em>, <em>index</em>, <em>side</em>, <em>type_</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.rig_base.BaseRig.get_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the node that is connected to current meta node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>compo</strong> (<em>str</em>) – A name of the current rig component.</li>
+<li><strong>index</strong> (<em>str/int</em>) – An index of current component.</li>
+<li><strong>side</strong> (<em>str/prc.Side</em>) – A side of current component.</li>
+<li><strong>type</strong> (<em>str</em>) – A type of the given node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">prc.Node/prc.Dag</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.rig_base.BaseRig.init_dag">
+<code class="descname">init_dag</code><span class="sig-paren">(</span><em>dag</em>, <em>compo</em>, <em>index</em>, <em>side</em>, <em>type_</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.rig_base.BaseRig.init_dag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes prc.Dag object to the rigging module.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dag</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>compo</strong> (<em>str</em>) – A name of the current rig component.</li>
+<li><strong>index</strong> (<em>str/int/None</em>) – An index of current component.</li>
+<li><strong>side</strong> (<em>str/prc.Side/None</em>) – Side of the given node.</li>
+<li><strong>type</strong> (<em>str</em>) – A type of the given node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">prc.Dag</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.rig_base.BaseRig.init_named_node">
+<code class="descname">init_named_node</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.rig_base.BaseRig.init_named_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes a named node.
+The given node needs to have a legal name.
+The component part needs to end with ModeNameDesc.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>node</strong> (<em>prc.Dag/prc.Node</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">prc.Dag/prc.Node</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.rig_base.BaseRig.init_node">
+<code class="descname">init_node</code><span class="sig-paren">(</span><em>node</em>, <em>compo</em>, <em>index</em>, <em>side</em>, <em>type_</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.rig_base.BaseRig.init_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes rigging node, connect the given node to
+the meta node and name it with the given info.
+The module name is always applied to component part.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> (<em>str/prc.Node</em>) – A pkrig node.</li>
+<li><strong>compo</strong> (<em>str</em>) – A name of the current rig component.</li>
+<li><strong>index</strong> (<em>str/int/None</em>) – An index of current component.</li>
+<li><strong>side</strong> (<em>str/prc.Side/None</em>) – Side of the given node.</li>
+<li><strong>type</strong> (<em>str</em>) – A type of the given node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">prc.Dag/prc.Node</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="genrig_fk.html" class="btn btn-neutral float-right" title="genrig_fk" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="skin_tools.html" class="btn btn-neutral float-left" title="skin_tools" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, peck
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

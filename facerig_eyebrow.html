@@ -1,0 +1,484 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>facerig_eyebrow &mdash; pkrig2 20210508 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="facerig_mouth" href="facerig_mouth.html" />
+    <link rel="prev" title="facerig_eye" href="facerig_eye.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pkrig2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pkrig2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="core.html">core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="naming_tools.html">naming_tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skin_tools.html">skin_tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_base.html">rig_base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_fk.html">genrig_fk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_spline_fk.html">genrig_spline_fk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_string_ik.html">genrig_string_ik</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_main_group.html">rig_main_group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_root.html">rig_root</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_head.html">facerig_head</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_eye.html">facerig_eye</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">facerig_eyebrow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_mouth.html">facerig_mouth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_nose.html">facerig_nose</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pkrig2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">pkrig2</a> &raquo;</li>
+        
+      <li>facerig_eyebrow</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/facerig_eyebrow.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="facerig-eyebrow">
+<h1>facerig_eyebrow<a class="headerlink" href="#facerig-eyebrow" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-pkrig2.facerig_eyebrow"></span><dl class="class">
+<dt id="pkrig2.facerig_eyebrow.EyebrowRig">
+<em class="property">class </em><code class="descclassname">pkrig2.facerig_eyebrow.</code><code class="descname">EyebrowRig</code><span class="sig-paren">(</span><em>head_tmpjnt</em>, <em>mid_ctrl_tmpjnt</em>, <em>mid_det_tmpjnts</em>, <em>l_main_tmpjnt</em>, <em>l_tmpjnts</em>, <em>l_det_tmpjnts</em>, <em>r_main_tmpjnt</em>, <em>r_tmpjnts</em>, <em>r_det_tmpjnts</em>, <em>ctrl_tmpcrv</em>, <em>mid_ctrl_tmpcrv</em>, <em>det_ctrl_tmpcrv</em>, <em>desc</em>, <em>ctrl_grp_parent</em>, <em>still_grp_parent</em>, <em>skin_parent</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.facerig_eyebrow.EyebrowRig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rig_base.html#pkrig2.rig_base.BaseRig" title="pkrig2.rig_base.BaseRig"><code class="xref py py-class docutils literal notranslate"><span class="pre">pkrig2.rig_base.BaseRig</span></code></a></p>
+<p>EyebrowRig module.</p>
+<p>Place template joints with the concept of Up/Down Out/In the Z axis of
+the right side joints are inverted so they will be flipped by the script.</p>
+<p>Bind the middle curve to the main left and right joints.</p>
+<p>Bind the sub control curve to the main left/right joints and the middle
+joint.</p>
+<p>Bind the detail curve to all sub joints and the middle joint.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>head_tmpjnt</strong> (<em>str</em>) – A head joint for this module.</li>
+<li><strong>mid_ctrl_tmpjnt</strong> (<em>str</em>) – A position for a middle controller.</li>
+<li><strong>mid_det_tmpjnts</strong> (<em>tuple</em>) – Positions for middle detail joints.</li>
+<li><strong>l_main_tmpjnt</strong> (<em>str</em>) – A position for left main eyebrow joint.</li>
+<li><strong>l_tmpjnts</strong> (<em>tuple</em>) – Positions for left eyebrow joints.</li>
+<li><strong>l_det_tmpjnts</strong> (<em>tuple</em>) – Positions for left detail joints.</li>
+<li><strong>r_main_tmpjnt</strong> (<em>str</em>) – A position for right main eyebrow joint.</li>
+<li><strong>r_tmpjnts</strong> (<em>tuple</em>) – Positions for right eyebrow joints.</li>
+<li><strong>r_det_tmpjnts</strong> (<em>tuple</em>) – Positions for right detail joints.</li>
+<li><strong>ctrl_tmpcrv</strong> (<em>str</em>) – A curve for controllers.</li>
+<li><strong>mid_ctrl_tmpcrv</strong> (<em>str</em>) – A curve for mid controller.</li>
+<li><strong>det_ctrl_tmpcrv</strong> (<em>str</em>) – A curve for detail controllers.</li>
+<li><strong>desc</strong> (<em>str</em>) – A descripted name.</li>
+<li><strong>ctrl_grp_parent</strong> (<em>prc.Dag/None</em>) – </li>
+<li><strong>jnt_grp_parent</strong> (<em>prc.Dag/None</em>) – </li>
+<li><strong>still_grp_parent</strong> (<em>prc.Dag/None</em>) – </li>
+<li><strong>skin_parent</strong> (<em>prc.Dag/None</em>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="pkrig2.facerig_eyebrow.EyebrowRig.meta">
+<code class="descname">meta</code><a class="headerlink" href="#pkrig2.facerig_eyebrow.EyebrowRig.meta" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eyebrow.EyebrowRig.jnt_grp">
+<code class="descname">jnt_grp</code><a class="headerlink" href="#pkrig2.facerig_eyebrow.EyebrowRig.jnt_grp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eyebrow.EyebrowRig.still_grp">
+<code class="descname">still_grp</code><a class="headerlink" href="#pkrig2.facerig_eyebrow.EyebrowRig.still_grp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eyebrow.EyebrowRig.l_eb">
+<code class="descname">l_eb</code><a class="headerlink" href="#pkrig2.facerig_eyebrow.EyebrowRig.l_eb" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="pkrig2.html#pkrig2.facerig_eyebrow.SingleEybrowRig" title="pkrig2.facerig_eyebrow.SingleEybrowRig">SingleEybrowRig</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eyebrow.EyebrowRig.r_eb">
+<code class="descname">r_eb</code><a class="headerlink" href="#pkrig2.facerig_eyebrow.EyebrowRig.r_eb" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="pkrig2.html#pkrig2.facerig_eyebrow.SingleEybrowRig" title="pkrig2.facerig_eyebrow.SingleEybrowRig">SingleEybrowRig</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eyebrow.EyebrowRig.mid_ctrl">
+<code class="descname">mid_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eyebrow.EyebrowRig.mid_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eyebrow.EyebrowRig.mid_det_jnts">
+<code class="descname">mid_det_jnts</code><a class="headerlink" href="#pkrig2.facerig_eyebrow.EyebrowRig.mid_det_jnts" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of middle detail joints.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eyebrow.EyebrowRig.shape_driver_grp">
+<code class="descname">shape_driver_grp</code><a class="headerlink" href="#pkrig2.facerig_eyebrow.EyebrowRig.shape_driver_grp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.facerig_eyebrow.SingleEybrowRig">
+<em class="property">class </em><code class="descclassname">pkrig2.facerig_eyebrow.</code><code class="descname">SingleEybrowRig</code><span class="sig-paren">(</span><em>main_tmpjnt</em>, <em>sub_tmpjnts</em>, <em>det_tmpjnts</em>, <em>side</em>, <em>desc</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.facerig_eyebrow.SingleEybrowRig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rig_base.html#pkrig2.rig_base.BaseRig" title="pkrig2.rig_base.BaseRig"><code class="xref py py-class docutils literal notranslate"><span class="pre">pkrig2.rig_base.BaseRig</span></code></a></p>
+<p>Single sided eyebrow rig.
+This is instanced by EyebrowRig to create left/right eyebrow rigs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>main_tmpjnt</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>sub_tmpjnts</strong> (<em>tuple</em>) – A tuple of sub joints, prc.Joint.</li>
+<li><strong>det_tmpjnts</strong> (<em>tuple</em>) – A tuple of detail joints, prc.Joint.</li>
+<li><strong>side</strong> (<em>prc.Side</em>) – </li>
+<li><strong>desc</strong> (<em>str</em>) – A descripted part.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="pkrig2.facerig_eyebrow.SingleEybrowRig.meta">
+<code class="descname">meta</code><a class="headerlink" href="#pkrig2.facerig_eyebrow.SingleEybrowRig.meta" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eyebrow.SingleEybrowRig.main_jnt">
+<code class="descname">main_jnt</code><a class="headerlink" href="#pkrig2.facerig_eyebrow.SingleEybrowRig.main_jnt" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Joint</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eyebrow.SingleEybrowRig.sub_jnts">
+<code class="descname">sub_jnts</code><a class="headerlink" href="#pkrig2.facerig_eyebrow.SingleEybrowRig.sub_jnts" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of sub joints(prc.Joint)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eyebrow.SingleEybrowRig.det_jnts">
+<code class="descname">det_jnts</code><a class="headerlink" href="#pkrig2.facerig_eyebrow.SingleEybrowRig.det_jnts" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of detail joints(prc.Joint)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eyebrow.SingleEybrowRig.main_ctrl">
+<code class="descname">main_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eyebrow.SingleEybrowRig.main_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eyebrow.SingleEybrowRig.sub_ctrls">
+<code class="descname">sub_ctrls</code><a class="headerlink" href="#pkrig2.facerig_eyebrow.SingleEybrowRig.sub_ctrls" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of sub controllers(prc.Dag)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eyebrow.SingleEybrowRig.det_ctrls">
+<code class="descname">det_ctrls</code><a class="headerlink" href="#pkrig2.facerig_eyebrow.SingleEybrowRig.det_ctrls" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of detail controllers(prc.Dag)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.facerig_eyebrow.test">
+<code class="descclassname">pkrig2.facerig_eyebrow.</code><code class="descname">test</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.facerig_eyebrow.test" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="facerig_mouth.html" class="btn btn-neutral float-right" title="facerig_mouth" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="facerig_eye.html" class="btn btn-neutral float-left" title="facerig_eye" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, peck
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

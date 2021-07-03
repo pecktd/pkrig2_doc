@@ -1,0 +1,1346 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>core &mdash; pkrig2 20210508 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="naming_tools" href="naming_tools.html" />
+    <link rel="prev" title="pkrig2" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pkrig2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pkrig2</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="naming_tools.html">naming_tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skin_tools.html">skin_tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_base.html">rig_base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_fk.html">genrig_fk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_spline_fk.html">genrig_spline_fk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_string_ik.html">genrig_string_ik</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_main_group.html">rig_main_group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_root.html">rig_root</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_head.html">facerig_head</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_eye.html">facerig_eye</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_eyebrow.html">facerig_eyebrow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_mouth.html">facerig_mouth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_nose.html">facerig_nose</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pkrig2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">pkrig2</a> &raquo;</li>
+        
+      <li>core</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/core.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pkrig2.core">
+<span id="core"></span><h1>core<a class="headerlink" href="#module-pkrig2.core" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pkrig2.core.Attr">
+<em class="property">class </em><code class="descclassname">pkrig2.core.</code><code class="descname">Attr</code><span class="sig-paren">(</span><em>attr_str</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Attr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class for attribute objects in pkrig.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>attr_str</strong> (<em>str</em>) – A string in a format of node.attribute.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="pkrig2.core.Attr.connections">
+<code class="descname">connections</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Attr.connections" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Attr.exists">
+<code class="descname">exists</code><a class="headerlink" href="#pkrig2.core.Attr.exists" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Attr.get_input">
+<code class="descname">get_input</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Attr.get_input" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Attr.get_output">
+<code class="descname">get_output</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Attr.get_output" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets only the first plug of the out plugs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">Attr/None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Attr.hide">
+<code class="descname">hide</code><a class="headerlink" href="#pkrig2.core.Attr.hide" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Attr.last">
+<code class="descname">last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Attr.last" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds the last connectable of the ‘multi’ attribtue.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pkrig2.html#pkrig2.core.Attr" title="pkrig2.core.Attr">Attr</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Attr.lock">
+<code class="descname">lock</code><a class="headerlink" href="#pkrig2.core.Attr.lock" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Attr.type">
+<code class="descname">type</code><a class="headerlink" href="#pkrig2.core.Attr.type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Attr.v">
+<code class="descname">v</code><a class="headerlink" href="#pkrig2.core.Attr.v" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Attr.value">
+<code class="descname">value</code><a class="headerlink" href="#pkrig2.core.Attr.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.core.Color">
+<em class="property">class </em><code class="descclassname">pkrig2.core.</code><code class="descname">Color</code><a class="headerlink" href="#pkrig2.core.Color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indices of colors those are used in pkrig module.</p>
+<dl class="attribute">
+<dt id="pkrig2.core.Color.black">
+<code class="descname">black</code><em class="property"> = 1</em><a class="headerlink" href="#pkrig2.core.Color.black" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Color.blue">
+<code class="descname">blue</code><em class="property"> = 6</em><a class="headerlink" href="#pkrig2.core.Color.blue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Color.brown">
+<code class="descname">brown</code><em class="property"> = 11</em><a class="headerlink" href="#pkrig2.core.Color.brown" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Color.dark_blue">
+<code class="descname">dark_blue</code><em class="property"> = 15</em><a class="headerlink" href="#pkrig2.core.Color.dark_blue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Color.dark_green">
+<code class="descname">dark_green</code><em class="property"> = 7</em><a class="headerlink" href="#pkrig2.core.Color.dark_green" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Color.dark_red">
+<code class="descname">dark_red</code><em class="property"> = 12</em><a class="headerlink" href="#pkrig2.core.Color.dark_red" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Color.gray">
+<code class="descname">gray</code><em class="property"> = 2</em><a class="headerlink" href="#pkrig2.core.Color.gray" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Color.green">
+<code class="descname">green</code><em class="property"> = 14</em><a class="headerlink" href="#pkrig2.core.Color.green" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Color.none">
+<code class="descname">none</code><em class="property"> = None</em><a class="headerlink" href="#pkrig2.core.Color.none" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Color.red">
+<code class="descname">red</code><em class="property"> = 13</em><a class="headerlink" href="#pkrig2.core.Color.red" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Color.soft_blue">
+<code class="descname">soft_blue</code><em class="property"> = 18</em><a class="headerlink" href="#pkrig2.core.Color.soft_blue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Color.soft_gray">
+<code class="descname">soft_gray</code><em class="property"> = 3</em><a class="headerlink" href="#pkrig2.core.Color.soft_gray" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Color.soft_red">
+<code class="descname">soft_red</code><em class="property"> = 31</em><a class="headerlink" href="#pkrig2.core.Color.soft_red" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Color.soft_yellow">
+<code class="descname">soft_yellow</code><em class="property"> = 21</em><a class="headerlink" href="#pkrig2.core.Color.soft_yellow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Color.white">
+<code class="descname">white</code><em class="property"> = 16</em><a class="headerlink" href="#pkrig2.core.Color.white" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Color.yellow">
+<code class="descname">yellow</code><em class="property"> = 17</em><a class="headerlink" href="#pkrig2.core.Color.yellow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.core.Component">
+<em class="property">class </em><code class="descclassname">pkrig2.core.</code><code class="descname">Component</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Component" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class for component objects in pkrig.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – A name of a component.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="pkrig2.core.Component.get_order">
+<code class="descname">get_order</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Component.get_order" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Component.name">
+<code class="descname">name</code><a class="headerlink" href="#pkrig2.core.Component.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Component.obj_name">
+<code class="descname">obj_name</code><a class="headerlink" href="#pkrig2.core.Component.obj_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Component.world_pos">
+<code class="descname">world_pos</code><a class="headerlink" href="#pkrig2.core.Component.world_pos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the world space coordinates of component</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.core.Controller">
+<em class="property">class </em><code class="descclassname">pkrig2.core.</code><code class="descname">Controller</code><span class="sig-paren">(</span><em>curve_param</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Controller" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pkrig2.html#pkrig2.core.Dag" title="pkrig2.core.Dag"><code class="xref py py-class docutils literal notranslate"><span class="pre">pkrig2.core.Dag</span></code></a></p>
+<p>Creates a transform with curve shape specified
+by curve_param.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>curve_param</strong> (<em>list/CurveParam</em>) – A curve parameter.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Cp">
+<code class="descclassname">pkrig2.core.</code><code class="descname">Cp</code><a class="headerlink" href="#pkrig2.core.Cp" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="pkrig2.html#pkrig2.core.CurveParam" title="pkrig2.core.CurveParam"><code class="xref py py-class docutils literal notranslate"><span class="pre">pkrig2.core.CurveParam</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.core.CurveParam">
+<em class="property">class </em><code class="descclassname">pkrig2.core.</code><code class="descname">CurveParam</code><a class="headerlink" href="#pkrig2.core.CurveParam" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parameters of one degree curve shapes those are used
+in pkrig module.</p>
+<dl class="attribute">
+<dt id="pkrig2.core.CurveParam.capsule">
+<code class="descname">capsule</code><em class="property"> = ((-2.011, 0, 0), (-1.977, 0.262, 0), (-1.876, 0.506, 0), (-1.715, 0.715, 0), (-1.506, 0.876, 0), (-1.262, 0.977, 0), (-1, 1.011, 0), (1, 1.011, 0), (1.262, 0.977, 0), (1.506, 0.876, 0), (1.715, 0.715, 0), (1.876, 0.506, 0), (1.977, 0.262, 0), (2.011, 0, 0), (1.977, -0.262, 0), (1.876, -0.506, 0), (1.715, -0.715, 0), (1.506, -0.876, 0), (1.262, -0.977, 0), (1, -1.011, 0), (-1, -1.011, 0), (-1.262, -0.977, 0), (-1.506, -0.876, 0), (-1.715, -0.715, 0), (-1.876, -0.506, 0), (-1.977, -0.262, 0), (-2.011, 0, 0))</em><a class="headerlink" href="#pkrig2.core.CurveParam.capsule" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.CurveParam.circle">
+<code class="descname">circle</code><em class="property"> = ((1.125, 0.0, 0.0), (1.004, 0.0, 0.0), (0.71, 0.0, -0.71), (0.0, 0.0, -1.004), (0.0, 0.0, -1.125), (0.0, 0.0, -1.004), (-0.71, 0.0, -0.71), (-1.004, 0.0, 0.0), (-1.125, 0.0, 0.0), (-1.004, 0.0, 0.0), (-0.71, 0.0, 0.71), (0.0, 0.0, 1.004), (0.0, 0.0, 1.125), (0.0, 0.0, 1.004), (0.71, 0.0, 0.71), (1.004, 0.0, 0.0))</em><a class="headerlink" href="#pkrig2.core.CurveParam.circle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.CurveParam.cross">
+<code class="descname">cross</code><em class="property"> = ((0, 0, -2.193), (0.852, 0, -1.267), (0.511, 0, -1.267), (0.511, 0, -0.633), (0.633, 0, -0.511), (1.267, 0, -0.511), (1.267, 0, -0.852), (2.193, 0, 0), (1.267, 0, 0.852), (1.267, 0, 0.511), (0.633, 0, 0.511), (0.511, 0, 0.633), (0.511, 0, 1.267), (0.852, 0, 1.267), (0, 0, 2.193), (-0.852, 0, 1.267), (-0.511, 0, 1.267), (-0.511, 0, 0.633), (-0.633, 0, 0.511), (-1.267, 0, 0.511), (-1.267, 0, 0.852), (-2.193, 0, 0), (-1.267, 0, -0.852), (-1.267, 0, -0.511), (-0.633, 0, -0.511), (-0.511, 0, -0.633), (-0.511, 0, -1.267), (-0.852, 0, -1.267), (0, 0, -2.193))</em><a class="headerlink" href="#pkrig2.core.CurveParam.cross" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.CurveParam.cube">
+<code class="descname">cube</code><em class="property"> = ((-1, -1, -1), (-1, -1, 1), (-1, 1, 1), (-1, -1, 1), (1, -1, 1), (1, 1, 1), (1, -1, 1), (1, -1, -1), (1, 1, -1), (1, -1, -1), (-1, -1, -1), (-1, 1, -1), (1, 1, -1), (1, 1, 1), (-1, 1, 1), (-1, 1, -1))</em><a class="headerlink" href="#pkrig2.core.CurveParam.cube" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.CurveParam.none">
+<code class="descname">none</code><em class="property"> = ((0, 0, 0), (0, 0, 0))</em><a class="headerlink" href="#pkrig2.core.CurveParam.none" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.CurveParam.nurbs_circle">
+<code class="descname">nurbs_circle</code><em class="property"> = 'nurbsCircle'</em><a class="headerlink" href="#pkrig2.core.CurveParam.nurbs_circle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.CurveParam.plus">
+<code class="descname">plus</code><em class="property"> = ((0, 1, 0), (0, -1, 0), (0, 0, 0), (-1, 0, 0), (1, 0, 0), (0, 0, 0), (0, 0, -1), (0, 0, 1))</em><a class="headerlink" href="#pkrig2.core.CurveParam.plus" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.CurveParam.sphere">
+<code class="descname">sphere</code><em class="property"> = ((-1.16, 0.0, 0.0), (-1.0, 0.0, 0.0), (-0.707, 0.707, 0.0), (0.0, 1.0, 0.0), (0.0, 1.16, 0.0), (0.0, 1.0, 0.0), (0.707, 0.707, 0.0), (1.0, 0.0, 0.0), (1.16, 0.0, 0.0), (1.0, 0.0, 0.0), (0.707, -0.707, 0.0), (0.0, -1.0, 0.0), (0.0, -1.16, 0.0), (0.0, -1.0, 0.0), (-0.707, -0.707, 0.0), (-1.0, 0.0, 0.0), (-0.7, 0.0, 0.7), (0.0, 0.0, 1.0), (0.0, 0.0, 1.16), (0.0, 0.0, 1.0), (0.7, 0.0, 0.7), (1.0, 0.0, 0.0), (0.7, 0.0, -0.7), (0.0, 0.0, -1.0), (0.0, 0.0, -1.16), (0.0, 0.0, -1.0), (0.0, 0.707, -0.707), (0.0, 1.0, 0.0), (0.0, 0.707, 0.707), (0.0, 0.0, 1.0), (0.0, -0.707, 0.707), (0.0, -1.0, 0.0), (0.0, -0.707, -0.707), (0.0, 0.0, -1.0), (-0.7, 0.0, -0.7), (-1.0, 0.0, 0.0))</em><a class="headerlink" href="#pkrig2.core.CurveParam.sphere" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.CurveParam.square">
+<code class="descname">square</code><em class="property"> = ((-1, -1, 0), (-1, 1, 0), (1, 1, 0), (1, -1, 0), (-1, -1, 0))</em><a class="headerlink" href="#pkrig2.core.CurveParam.square" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.CurveParam.stick">
+<code class="descname">stick</code><em class="property"> = ((0.0, 0.0, 0.0), (0.0, 1.5, 0.0), (0.5, 2.0, 0.0), (0.0, 2.5, 0.0), (-0.5, 2.0, 0.0), (0.0, 1.5, 0.0))</em><a class="headerlink" href="#pkrig2.core.CurveParam.stick" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.core.Dag">
+<em class="property">class </em><code class="descclassname">pkrig2.core.</code><code class="descname">Dag</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Dag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pkrig2.html#pkrig2.core.Node" title="pkrig2.core.Node"><code class="xref py py-class docutils literal notranslate"><span class="pre">pkrig2.core.Node</span></code></a></p>
+<p>Base class for all DAG objects in pkrig.
+Casts existed Maya node to pkrig Dag nobject.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – A name of a Maya DAG node.</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="pkrig2.core.Dag.color">
+<code class="descname">color</code><a class="headerlink" href="#pkrig2.core.Dag.color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets overrideColor of current shape.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Dag.create_curve">
+<code class="descname">create_curve</code><span class="sig-paren">(</span><em>curve_param</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Dag.create_curve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a curve shape and parent it under
+current transform node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>curve_param</strong> (<em>tuple</em>) – A curve parameter.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">str, a name of created shape.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Dag.freeze">
+<code class="descname">freeze</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Dag.freeze" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Dag.get_all_shapes">
+<code class="descname">get_all_shapes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Dag.get_all_shapes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Dag.get_parent">
+<code class="descname">get_parent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Dag.get_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a parent of current Dag.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dag if parent is a DAG, None if parent is world.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Dag.get_shape">
+<code class="descname">get_shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Dag.get_shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the first shape of current Dag.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A pkrig Dag of the first shape.
+None if current Dag doesn’t have shape node.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Dag.hide">
+<code class="descname">hide</code><a class="headerlink" href="#pkrig2.core.Dag.hide" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Dag.lhtrs">
+<code class="descname">lhtrs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Dag.lhtrs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Locks and hides translate, rotate and scale attributes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Dag.move_shape">
+<code class="descname">move_shape</code><span class="sig-paren">(</span><em>values</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Dag.move_shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Moves shape under the object space.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>values</strong> – Translate values.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Dag.name">
+<code class="descname">name</code><a class="headerlink" href="#pkrig2.core.Dag.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Dag.rotate_order">
+<code class="descname">rotate_order</code><a class="headerlink" href="#pkrig2.core.Dag.rotate_order" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Dag.rotate_shape">
+<code class="descname">rotate_shape</code><span class="sig-paren">(</span><em>rotate_values</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Dag.rotate_shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rotates currnet shape.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>rotate_values</strong> (<em>tuple</em>) – A tuple of three floats.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Dag.scale_shape">
+<code class="descname">scale_shape</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Dag.scale_shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scale current shape.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<em>float</em>) – Scale value.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Dag.set_default_color">
+<code class="descname">set_default_color</code><span class="sig-paren">(</span><em>tone</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Dag.set_default_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets color of current DAG regarding to its side and the given tone.
+Valid tones are 0 = normal, 1 = soft, 2 = dark.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>tone</strong> (<em>int</em>) – A color tone, 0 = normal, 1 = soft, 2 = dark.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Dag.set_parent">
+<code class="descname">set_parent</code><span class="sig-paren">(</span><em>parent</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Dag.set_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parents current Dag to given parent node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parent</strong> (<em>str/Dag</em>) – A string or a pkrig Dag as a Maya DAG node.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Dag.snap">
+<code class="descname">snap</code><span class="sig-paren">(</span><em>target</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Dag.snap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Snaps transformation of current DAG object to target.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>target</strong> (<em>str/Dag</em>) – A string or a pkrig Dag as a Maya DAG node.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Dag.snap_orient">
+<code class="descname">snap_orient</code><span class="sig-paren">(</span><em>target</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Dag.snap_orient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Snaps orientation of current DAG object to target.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>target</strong> (<em>str/Dag</em>) – A string or a pkrig Dag as a Maya DAG node.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Dag.snap_point">
+<code class="descname">snap_point</code><span class="sig-paren">(</span><em>target</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Dag.snap_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Snaps position of current DAG object to target.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>target</strong> (<em>str/Dag</em>) – A string or a pkrig Dag as a target.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Dag.snap_scale">
+<code class="descname">snap_scale</code><span class="sig-paren">(</span><em>target</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Dag.snap_scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Snaps scale of current DAG object to target.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>target</strong> (<em>str/Dag</em>) – A string or a pkrig Dag as a Maya DAG node.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Dag.world_pos">
+<code class="descname">world_pos</code><a class="headerlink" href="#pkrig2.core.Dag.world_pos" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Dag.x_axis">
+<code class="descname">x_axis</code><a class="headerlink" href="#pkrig2.core.Dag.x_axis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Dag.y_axis">
+<code class="descname">y_axis</code><a class="headerlink" href="#pkrig2.core.Dag.y_axis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Dag.z_axis">
+<code class="descname">z_axis</code><a class="headerlink" href="#pkrig2.core.Dag.z_axis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.core.DrawStyle">
+<em class="property">class </em><code class="descclassname">pkrig2.core.</code><code class="descname">DrawStyle</code><a class="headerlink" href="#pkrig2.core.DrawStyle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw style attribute values on joint node.</p>
+<dl class="attribute">
+<dt id="pkrig2.core.DrawStyle.bone">
+<code class="descname">bone</code><em class="property"> = 0</em><a class="headerlink" href="#pkrig2.core.DrawStyle.bone" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.DrawStyle.box">
+<code class="descname">box</code><em class="property"> = 1</em><a class="headerlink" href="#pkrig2.core.DrawStyle.box" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.DrawStyle.none">
+<code class="descname">none</code><em class="property"> = 2</em><a class="headerlink" href="#pkrig2.core.DrawStyle.none" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.core.Joint">
+<em class="property">class </em><code class="descclassname">pkrig2.core.</code><code class="descname">Joint</code><a class="headerlink" href="#pkrig2.core.Joint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pkrig2.html#pkrig2.core.Dag" title="pkrig2.core.Dag"><code class="xref py py-class docutils literal notranslate"><span class="pre">pkrig2.core.Dag</span></code></a></p>
+<p>A joint node.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.core.JointController">
+<em class="property">class </em><code class="descclassname">pkrig2.core.</code><code class="descname">JointController</code><span class="sig-paren">(</span><em>curve_param</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.JointController" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pkrig2.html#pkrig2.core.Dag" title="pkrig2.core.Dag"><code class="xref py py-class docutils literal notranslate"><span class="pre">pkrig2.core.Dag</span></code></a></p>
+<p>Creates a joint, to be used as a controller,
+with curve shape specified by curve_param.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>curve_param</strong> (<em>list/CurveParam</em>) – A curve parameter.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.core.Locator">
+<em class="property">class </em><code class="descclassname">pkrig2.core.</code><code class="descname">Locator</code><a class="headerlink" href="#pkrig2.core.Locator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pkrig2.html#pkrig2.core.Dag" title="pkrig2.core.Dag"><code class="xref py py-class docutils literal notranslate"><span class="pre">pkrig2.core.Dag</span></code></a></p>
+<p>A locator node.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.core.Node">
+<em class="property">class </em><code class="descclassname">pkrig2.core.</code><code class="descname">Node</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class for all nodes in pkrig.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – A name of a Maya node.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="pkrig2.core.Node.add">
+<code class="descname">add</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Node.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds an attribute using addAttr command.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Node.attr">
+<code class="descname">attr</code><span class="sig-paren">(</span><em>attr_str</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Node.attr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Instances Attr object to the given attr_str.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>attr_str</strong> (<em>str</em>) – A name of a node’s attribute.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pkrig2.html#pkrig2.core.Attr" title="pkrig2.core.Attr">Attr</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Node.get_side">
+<code class="descname">get_side</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Node.get_side" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets side of the current node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Side/None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pkrig2.core.Node.lhattrs">
+<code class="descname">lhattrs</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.Node.lhattrs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Locks and hides given attributes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Node.name">
+<code class="descname">name</code><a class="headerlink" href="#pkrig2.core.Node.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.core.Null">
+<em class="property">class </em><code class="descclassname">pkrig2.core.</code><code class="descname">Null</code><a class="headerlink" href="#pkrig2.core.Null" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pkrig2.html#pkrig2.core.Dag" title="pkrig2.core.Dag"><code class="xref py py-class docutils literal notranslate"><span class="pre">pkrig2.core.Dag</span></code></a></p>
+<p>A transform node.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.core.Operator">
+<em class="property">class </em><code class="descclassname">pkrig2.core.</code><code class="descname">Operator</code><a class="headerlink" href="#pkrig2.core.Operator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Operators on utility nodes.</p>
+<dl class="attribute">
+<dt id="pkrig2.core.Operator.average">
+<code class="descname">average</code><em class="property"> = 3</em><a class="headerlink" href="#pkrig2.core.Operator.average" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Operator.divide">
+<code class="descname">divide</code><em class="property"> = 2</em><a class="headerlink" href="#pkrig2.core.Operator.divide" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Operator.equal">
+<code class="descname">equal</code><em class="property"> = 0</em><a class="headerlink" href="#pkrig2.core.Operator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Operator.greater_or_equal">
+<code class="descname">greater_or_equal</code><em class="property"> = 3</em><a class="headerlink" href="#pkrig2.core.Operator.greater_or_equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Operator.greater_than">
+<code class="descname">greater_than</code><em class="property"> = 2</em><a class="headerlink" href="#pkrig2.core.Operator.greater_than" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Operator.less_or_equal">
+<code class="descname">less_or_equal</code><em class="property"> = 5</em><a class="headerlink" href="#pkrig2.core.Operator.less_or_equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Operator.less_than">
+<code class="descname">less_than</code><em class="property"> = 4</em><a class="headerlink" href="#pkrig2.core.Operator.less_than" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Operator.multiply">
+<code class="descname">multiply</code><em class="property"> = 1</em><a class="headerlink" href="#pkrig2.core.Operator.multiply" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Operator.no_operation">
+<code class="descname">no_operation</code><em class="property"> = 0</em><a class="headerlink" href="#pkrig2.core.Operator.no_operation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Operator.not_equal">
+<code class="descname">not_equal</code><em class="property"> = 1</em><a class="headerlink" href="#pkrig2.core.Operator.not_equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Operator.power">
+<code class="descname">power</code><em class="property"> = 3</em><a class="headerlink" href="#pkrig2.core.Operator.power" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Operator.subtract">
+<code class="descname">subtract</code><em class="property"> = 2</em><a class="headerlink" href="#pkrig2.core.Operator.subtract" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Operator.sum">
+<code class="descname">sum</code><em class="property"> = 1</em><a class="headerlink" href="#pkrig2.core.Operator.sum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.core.Ro">
+<em class="property">class </em><code class="descclassname">pkrig2.core.</code><code class="descname">Ro</code><a class="headerlink" href="#pkrig2.core.Ro" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rotate orders.</p>
+<dl class="attribute">
+<dt id="pkrig2.core.Ro.xyz">
+<code class="descname">xyz</code><em class="property"> = 0</em><a class="headerlink" href="#pkrig2.core.Ro.xyz" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Ro.xzy">
+<code class="descname">xzy</code><em class="property"> = 3</em><a class="headerlink" href="#pkrig2.core.Ro.xzy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Ro.yxz">
+<code class="descname">yxz</code><em class="property"> = 4</em><a class="headerlink" href="#pkrig2.core.Ro.yxz" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Ro.yzx">
+<code class="descname">yzx</code><em class="property"> = 1</em><a class="headerlink" href="#pkrig2.core.Ro.yzx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Ro.zxy">
+<code class="descname">zxy</code><em class="property"> = 2</em><a class="headerlink" href="#pkrig2.core.Ro.zxy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Ro.zyx">
+<code class="descname">zyx</code><em class="property"> = 5</em><a class="headerlink" href="#pkrig2.core.Ro.zyx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.core.Side">
+<em class="property">class </em><code class="descclassname">pkrig2.core.</code><code class="descname">Side</code><a class="headerlink" href="#pkrig2.core.Side" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies side of the rig component.</p>
+<dl class="attribute">
+<dt id="pkrig2.core.Side.left">
+<code class="descname">left</code><em class="property"> = 'L'</em><a class="headerlink" href="#pkrig2.core.Side.left" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.core.Side.right">
+<code class="descname">right</code><em class="property"> = 'R'</em><a class="headerlink" href="#pkrig2.core.Side.right" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.aim_constraint">
+<code class="descclassname">pkrig2.core.</code><code class="descname">aim_constraint</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.aim_constraint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translates mc.aimConstraint command to pkrig command.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pkrig2.html#pkrig2.core.Dag" title="pkrig2.core.Dag">Dag</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.cluster">
+<code class="descclassname">pkrig2.core.</code><code class="descname">cluster</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.cluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translates mc.cluster command to pkrig command.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A cluster node.
+Dag: A cluster handle.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pkrig2.html#pkrig2.core.Node" title="pkrig2.core.Node">Node</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.create">
+<code class="descclassname">pkrig2.core.</code><code class="descname">create</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses createNode command to create a Maya node
+then cast the created node to pkrig node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">Dag/Node</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.dag_path_from_dag_str">
+<code class="descclassname">pkrig2.core.</code><code class="descname">dag_path_from_dag_str</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.dag_path_from_dag_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets om.MDagpath from the given name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – A name of DAG node.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">om.MDagPath</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.get_all_components">
+<code class="descclassname">pkrig2.core.</code><code class="descname">get_all_components</code><span class="sig-paren">(</span><em>xform_str</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.get_all_components" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets all components of the given transform node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>xform_str</strong> (<em>str</em>) – A name of a transform node.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A list of all component names.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.get_compo_index">
+<code class="descclassname">pkrig2.core.</code><code class="descname">get_compo_index</code><span class="sig-paren">(</span><em>compo_str</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.get_compo_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets an index of the given component.
+Ex.
+pCylinder1.vtx[16] -&gt; 16
+nurbsPlane1.cv[1][1] -&gt; 5</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>compo_str</strong> (<em>str</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.group">
+<code class="descclassname">pkrig2.core.</code><code class="descname">group</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translates mc.group command to pkrig command.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pkrig2.html#pkrig2.core.Dag" title="pkrig2.core.Dag">Dag</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.is_attribute">
+<code class="descclassname">pkrig2.core.</code><code class="descname">is_attribute</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.is_attribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks is the given name an attribute.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – Represents an attribute name.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True if the given name is an attribute else False.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.is_component">
+<code class="descclassname">pkrig2.core.</code><code class="descname">is_component</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.is_component" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks is the given name a component.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – Represents a component name.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True if the given name is a component node else False.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.is_shape">
+<code class="descclassname">pkrig2.core.</code><code class="descname">is_shape</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.is_shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks is the given name a shape node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – Represents a node name.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True if the given name is a shape node else False.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.is_transform">
+<code class="descclassname">pkrig2.core.</code><code class="descname">is_transform</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.is_transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks is the given name a transform node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – Represents a node name.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True if the given name is a transform node else False.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.mobject_from_str">
+<code class="descclassname">pkrig2.core.</code><code class="descname">mobject_from_str</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.mobject_from_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets om.MObject from the given name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – A name of Maya node.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">om.MObject</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.orient_constraint">
+<code class="descclassname">pkrig2.core.</code><code class="descname">orient_constraint</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.orient_constraint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translates mc.orientConstraint command to pkrig command.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pkrig2.html#pkrig2.core.Dag" title="pkrig2.core.Dag">Dag</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.parent_constraint">
+<code class="descclassname">pkrig2.core.</code><code class="descname">parent_constraint</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.parent_constraint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translates mc.parentConstraint command to pkrig command.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pkrig2.html#pkrig2.core.Dag" title="pkrig2.core.Dag">Dag</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.point_constraint">
+<code class="descclassname">pkrig2.core.</code><code class="descname">point_constraint</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.point_constraint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translates mc.pointConstraint command to pkrig command.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pkrig2.html#pkrig2.core.Dag" title="pkrig2.core.Dag">Dag</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.scale_constraint">
+<code class="descclassname">pkrig2.core.</code><code class="descname">scale_constraint</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.scale_constraint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translates mc.pointConstraint command to pkrig command.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pkrig2.html#pkrig2.core.Dag" title="pkrig2.core.Dag">Dag</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.to_dags">
+<code class="descclassname">pkrig2.core.</code><code class="descname">to_dags</code><span class="sig-paren">(</span><em>names</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.to_dags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Casts a list of object’s names to pkrig Dag objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>names</strong> (<em>list/tuple</em>) – A list or tuple of node names.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A tuple of pkrig Dag objects.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tuple</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.to_pkrig_node">
+<code class="descclassname">pkrig2.core.</code><code class="descname">to_pkrig_node</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.to_pkrig_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Casts the existed Maya node or attribute to pkrig node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – A name of a Maya node or a component.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">Node/Attr/Dag/Component/None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.core.to_pkrig_nodes">
+<code class="descclassname">pkrig2.core.</code><code class="descname">to_pkrig_nodes</code><span class="sig-paren">(</span><em>names</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.core.to_pkrig_nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Casts a list of object’s names to pkrig nodes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>names</strong> (<em>list/tuple</em>) – A list or tuple of node names.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A tuple of pkrig objects.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tuple</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="naming_tools.html" class="btn btn-neutral float-right" title="naming_tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="modules.html" class="btn btn-neutral float-left" title="pkrig2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, peck
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

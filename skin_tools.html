@@ -1,0 +1,484 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>skin_tools &mdash; pkrig2 20210508 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="rig_base" href="rig_base.html" />
+    <link rel="prev" title="utils" href="utils.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pkrig2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pkrig2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="core.html">core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="naming_tools.html">naming_tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">utils</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">skin_tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_base.html">rig_base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_fk.html">genrig_fk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_spline_fk.html">genrig_spline_fk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_string_ik.html">genrig_string_ik</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_main_group.html">rig_main_group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_root.html">rig_root</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_head.html">facerig_head</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_eye.html">facerig_eye</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_eyebrow.html">facerig_eyebrow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_mouth.html">facerig_mouth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_nose.html">facerig_nose</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pkrig2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">pkrig2</a> &raquo;</li>
+        
+      <li>skin_tools</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/skin_tools.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pkrig2.skin_tools">
+<span id="skin-tools"></span><h1>skin_tools<a class="headerlink" href="#module-pkrig2.skin_tools" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pkrig2.skin_tools.bind_skin_data_to">
+<code class="descclassname">pkrig2.skin_tools.</code><code class="descname">bind_skin_data_to</code><span class="sig-paren">(</span><em>skin_data</em>, <em>dag</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.skin_tools.bind_skin_data_to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Binds the given skin data to the given DAG node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>skin_data</strong> (<em>dict</em>) – A skin data retrieved from
+get_skin_data_from_bound_object</li>
+<li><strong>dag</strong> (<em>prc.Dag</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A created skin cluster node(prc.Node)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.skin_tools.bind_skin_data_with_new_influences_to">
+<code class="descclassname">pkrig2.skin_tools.</code><code class="descname">bind_skin_data_with_new_influences_to</code><span class="sig-paren">(</span><em>skin_data</em>, <em>geo</em>, <em>new_influences</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.skin_tools.bind_skin_data_with_new_influences_to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Binds the given skin_data to the given geo.
+Replaces the influence list in the skin_data with the given new_influences.</p>
+<p>A number of members in skin_data[‘influences’] and new_influences need to
+match.
+Matching position is used to pair the order of incluencers.
+If the matchin process is not finished, skin_data is not bound to the geo.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>skin_data</strong> (<em>dict</em>) – A skin_data returned from
+get_skin_data_from_bound_object</li>
+<li><strong>geo</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>new_influences</strong> (<em>list</em>) – A list of DAG(str) objects.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A created skin cluster node(prc.Node)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.skin_tools.direct_copy_influence_weights">
+<code class="descclassname">pkrig2.skin_tools.</code><code class="descname">direct_copy_influence_weights</code><span class="sig-paren">(</span><em>source_jnt</em>, <em>source_geo</em>, <em>target_jnt</em>, <em>target_geo</em>, <em>multiplier</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.skin_tools.direct_copy_influence_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copies weight values of the given source_jnt on source_geo</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>source_jnt</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>source_geo</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>target_jnt</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>target_geo</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>multiplier</strong> (<em>float</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.skin_tools.get_affected_components">
+<code class="descclassname">pkrig2.skin_tools.</code><code class="descname">get_affected_components</code><span class="sig-paren">(</span><em>geo</em>, <em>joint</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.skin_tools.get_affected_components" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets affected vertices of the give joint.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>geo</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>joint</strong> (<em>prc.Dag</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A list of component names.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.skin_tools.get_inf_index">
+<code class="descclassname">pkrig2.skin_tools.</code><code class="descname">get_inf_index</code><span class="sig-paren">(</span><em>skin</em>, <em>joint</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.skin_tools.get_inf_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the index of the given joint of the given skin cluster table.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>skin</strong> (<em>oma.MFnSkinCluster</em>) – </li>
+<li><strong>joint</strong> (<em>prc.Dag</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">An influence index if it is found else None.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">int/None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.skin_tools.get_related_skin_clusters">
+<code class="descclassname">pkrig2.skin_tools.</code><code class="descname">get_related_skin_clusters</code><span class="sig-paren">(</span><em>dag</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.skin_tools.get_related_skin_clusters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a skin cluster(oma.MFnSkinCluster) that is connected
+to the given prc.Dag.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dag</strong> (<em>prc.Dag</em>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.skin_tools.get_skin_data_from_bound_object">
+<code class="descclassname">pkrig2.skin_tools.</code><code class="descname">get_skin_data_from_bound_object</code><span class="sig-paren">(</span><em>dag</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.skin_tools.get_skin_data_from_bound_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets skinning data from given DAG node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dag</strong> (<em>prc.Dag</em>) – A DAG node.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A dictionary in a format of
+{<blockquote>
+<div>’name’: A name(str) of skin cluster node.,
+‘method’: A skinning method(str).,
+‘influences’: A list of names(str) of influences.,
+‘weights’: A list of skin weight values(float).,
+‘blendWeights’: A list of blend weight values(float).</div></blockquote>
+<p>}</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.skin_tools.move_weight">
+<code class="descclassname">pkrig2.skin_tools.</code><code class="descname">move_weight</code><span class="sig-paren">(</span><em>compo_str</em>, <em>joints_weights</em>, <em>source_joint</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.skin_tools.move_weight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Moves weight values of the given compo_str from the given source_joint
+to the given joint with multiply to the given weight.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>compo_str</strong> (<em>str</em>) – </li>
+<li><strong>joints_weights</strong> (<em>dict</em>) – {prc.Dag: float} Ex. {joint1: 0.5, joint2: 0.5}</li>
+<li><strong>source_joint</strong> (<em>prc.Dag</em>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.skin_tools.rebuild_list_from_object_positions">
+<code class="descclassname">pkrig2.skin_tools.</code><code class="descname">rebuild_list_from_object_positions</code><span class="sig-paren">(</span><em>dag_names</em>, <em>target_dag_names</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.skin_tools.rebuild_list_from_object_positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds a new list from the members of the given ‘dag_names’
+that have the same position as DAG nodes in ‘dag_names’</p>
+<p>If any of DAG node in ‘target_dag_names’ doesn’t have a matched DAG,
+raises an error.</p>
+<p>This functions is used to rebuild a list of influent joints in ‘dag_names’
+that have the same position as joints in ‘target_dag_names’.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dag_names</strong> (<em>list</em>) – A list of DAG nodes(str) to be selected
+to the return list if the position matches with any in
+target_dag_names.</li>
+<li><strong>target_dag_names</strong> (<em>list</em>) – A list of DAG nodes(str)
+as the referent positions.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A list of DAG(str) nodes or None.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.skin_tools.spline_weight_divide">
+<code class="descclassname">pkrig2.skin_tools.</code><code class="descname">spline_weight_divide</code><span class="sig-paren">(</span><em>geo</em>, <em>source_joint</em>, <em>target_joints</em>, <em>start_pos</em>, <em>end_pos</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.skin_tools.spline_weight_divide" title="Permalink to this definition">¶</a></dt>
+<dd><p>Using cubic spline weight function to distribute weights from
+the source_joint to the given target_joints.
+:param geo:
+:type geo: prc.Dag
+:param source_joint:
+:type source_joint: prc.Dag
+:param target_joints:
+:type target_joints: list
+:param start_pos: A reference vector.
+:type start_pos: tuple
+:param end_pos: A reference position.
+:type end_pos: tuple</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.skin_tools.weight_mask">
+<code class="descclassname">pkrig2.skin_tools.</code><code class="descname">weight_mask</code><span class="sig-paren">(</span><em>mask_jnt</em>, <em>mask_geo</em>, <em>geo</em>, <em>base_jnt</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.skin_tools.weight_mask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses weight values of the given mask_jnt on mask_geo as a weight mask.
+Apply (1 - mask weight value) to all weight values of the given base_jnt
+that influences to the given geo.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>mask_jnt</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>mask_geo</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>geo</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>base_jnt</strong> (<em>prc.Dag</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="rig_base.html" class="btn btn-neutral float-right" title="rig_base" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="utils.html" class="btn btn-neutral float-left" title="utils" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, peck
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

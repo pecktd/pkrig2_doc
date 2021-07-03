@@ -1,0 +1,616 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>facerig_mouth &mdash; pkrig2 20210508 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="facerig_nose" href="facerig_nose.html" />
+    <link rel="prev" title="facerig_eyebrow" href="facerig_eyebrow.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pkrig2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pkrig2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="core.html">core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="naming_tools.html">naming_tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skin_tools.html">skin_tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_base.html">rig_base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_fk.html">genrig_fk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_spline_fk.html">genrig_spline_fk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_string_ik.html">genrig_string_ik</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_main_group.html">rig_main_group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_root.html">rig_root</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_head.html">facerig_head</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_eye.html">facerig_eye</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_eyebrow.html">facerig_eyebrow</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">facerig_mouth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_nose.html">facerig_nose</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pkrig2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">pkrig2</a> &raquo;</li>
+        
+      <li>facerig_mouth</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/facerig_mouth.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pkrig2.facerig_mouth">
+<span id="facerig-mouth"></span><h1>facerig_mouth<a class="headerlink" href="#module-pkrig2.facerig_mouth" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pkrig2.facerig_mouth.MouthRig">
+<em class="property">class </em><code class="descclassname">pkrig2.facerig_mouth.</code><code class="descname">MouthRig</code><span class="sig-paren">(</span><em>head_tmpjnt</em>, <em>upper_jaw_tmpjnts</em>, <em>lower_jaw_tmpjnts</em>, <em>lip_tmpjnt</em>, <em>lip_up_tmpjnt</em>, <em>lip_low_tmpjnt</em>, <em>crnr_l_tmpjnt</em>, <em>crnr_r_tmpjnt</em>, <em>laughline_l_tmpjnt</em>, <em>laughline_r_tmpjnt</em>, <em>cheek_l_tmpjnt</em>, <em>cheek_r_tmpjnt</em>, <em>up_cheek_l_tmpjnt</em>, <em>up_cheek_r_tmpjnt</em>, <em>lip_crnr_up_l_tmpctrljnt</em>, <em>lip_crnr_low_l_tmpctrljnt</em>, <em>lip_crnr_up_r_tmpctrljnt</em>, <em>lip_crnr_low_r_tmpctrljnt</em>, <em>lip_up_l_tmpctrljnts</em>, <em>lip_low_l_tmpctrljnts</em>, <em>lip_up_r_tmpctrljnts</em>, <em>lip_low_r_tmpctrljnts</em>, <em>det_ctrl_ori_tmpjnts</em>, <em>oc_tmpnrb</em>, <em>crnr_out_tmpnrb</em>, <em>crnr_in_tmpnrb</em>, <em>crnr_up_tmpnrb</em>, <em>crnr_down_tmpnrb</em>, <em>crnr_pull_tmpnrb</em>, <em>crnr_push_tmpnrb</em>, <em>desc</em>, <em>ctrl_grp_parent</em>, <em>still_grp_parent</em>, <em>skin_parent</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rig_base.html#pkrig2.rig_base.BaseRig" title="pkrig2.rig_base.BaseRig"><code class="xref py py-class docutils literal notranslate"><span class="pre">pkrig2.rig_base.BaseRig</span></code></a></p>
+<p>MouthRig module.</p>
+<p>Surface’s spans U has to be devisible by 4.
+Surface’s spans V has to be 1.
+Both U and V degrees have to be 1.
+U 0 is at the left corner and loops clockwise.</p>
+<p>The number of detail joints is doubled from span U.</p>
+<p>Template joints for detail joints are needed.
+The amount of template joints is the number of span U.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>head_tmpjnt</strong> (<em>str</em>) – </li>
+<li><strong>upper_jaw_tmpjnts</strong> (<em>tuple</em>) – </li>
+<li><strong>lower_jaw_tmpjnts</strong> (<em>tuple</em>) – </li>
+<li><strong>lip_tmpjnt</strong> (<em>str</em>) – </li>
+<li><strong>lip_up_tmpjnt</strong> (<em>str</em>) – </li>
+<li><strong>lip_low_tmpjnt</strong> (<em>str</em>) – </li>
+<li><strong>crnr_l_tmpjnt</strong> (<em>str</em>) – </li>
+<li><strong>crnr_r_tmpjnt</strong> (<em>str</em>) – </li>
+<li><strong>laughline_l_tmpjnt</strong> (<em>str</em>) – </li>
+<li><strong>laughline_r_tmpjnt</strong> (<em>str</em>) – </li>
+<li><strong>cheek_l_tmpjnt</strong> (<em>str</em>) – </li>
+<li><strong>cheek_r_tmpjnt</strong> (<em>str</em>) – </li>
+<li><strong>up_cheek_l_tmpjnt</strong> (<em>str</em>) – </li>
+<li><strong>up_cheek_r_tmpjnt</strong> (<em>str</em>) – </li>
+<li><strong>lip_crnr_up_l_ctrl_tmpjnt</strong> (<em>str</em>) – </li>
+<li><strong>lip_crnr_low_l_ctrl_tmpjnt</strong> (<em>str</em>) – </li>
+<li><strong>lip_crnr_up_r_ctrl_tmpjnt</strong> (<em>str</em>) – </li>
+<li><strong>lip_crnr_low_r_ctrl_tmpjnt</strong> (<em>str</em>) – </li>
+<li><strong>lip_up_l_ctrl_tmpjnts</strong> (<em>tuple</em>) – </li>
+<li><strong>lip_low_l_ctrl_tmpjnts</strong> (<em>tuple</em>) – </li>
+<li><strong>lip_up_r_ctrl_tmpjnts</strong> (<em>tuple</em>) – </li>
+<li><strong>lip_low_r_ctrl_tmpjnts</strong> (<em>tuple</em>) – </li>
+<li><strong>det_ctrl_ori_tmpjnts</strong> (<em>tuple</em>) – </li>
+<li><strong>oc_tmpnrb</strong> (<em>str</em>) – </li>
+<li><strong>crnr_out_tmpnrb</strong> (<em>str</em>) – </li>
+<li><strong>crnr_in_tmpnrb</strong> (<em>str</em>) – </li>
+<li><strong>crnr_up_tmpnrb</strong> (<em>str</em>) – </li>
+<li><strong>crnr_down_tmpnrb</strong> (<em>str</em>) – </li>
+<li><strong>crnr_pull_tmpnrb</strong> (<em>str</em>) – </li>
+<li><strong>crnr_push_tmpnrb</strong> (<em>str</em>) – </li>
+<li><strong>lip_uplow_tmpnrb</strong> (<em>str</em>) – </li>
+<li><strong>desc</strong> (<em>str</em>) – </li>
+<li><strong>ctrl_grp_parent</strong> (<em>prc.Dag/None</em>) – </li>
+<li><strong>jnt_grp_parent</strong> (<em>prc.Dag/None</em>) – </li>
+<li><strong>still_grp_parent</strong> (<em>prc.Dag/None</em>) – </li>
+<li><strong>skin_parent</strong> (<em>prc.Dag/None</em>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.meta">
+<code class="descname">meta</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.meta" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.jnt_grp">
+<code class="descname">jnt_grp</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.jnt_grp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.still_grp">
+<code class="descname">still_grp</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.still_grp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.lrjnt_grp">
+<code class="descname">lrjnt_grp</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.lrjnt_grp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.head_jnt">
+<code class="descname">head_jnt</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.head_jnt" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.main_ctrl">
+<code class="descname">main_ctrl</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.main_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.main_up_ctrl">
+<code class="descname">main_up_ctrl</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.main_up_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.main_low_ctrl">
+<code class="descname">main_low_ctrl</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.main_low_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.upper_jaw_ctrls">
+<code class="descname">upper_jaw_ctrls</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.upper_jaw_ctrls" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of  prc.Dag(s)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.lower_jaw_ctrls">
+<code class="descname">lower_jaw_ctrls</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.lower_jaw_ctrls" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of  prc.Dag(s)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.crnr_l_ctrl">
+<code class="descname">crnr_l_ctrl</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.crnr_l_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.crnr_r_ctrl">
+<code class="descname">crnr_r_ctrl</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.crnr_r_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.lip_up_ctrl">
+<code class="descname">lip_up_ctrl</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.lip_up_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.lip_low_ctrl">
+<code class="descname">lip_low_ctrl</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.lip_low_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.lip_crnr_l_ctrl">
+<code class="descname">lip_crnr_l_ctrl</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.lip_crnr_l_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.lip_crnr_up_l_ctrl">
+<code class="descname">lip_crnr_up_l_ctrl</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.lip_crnr_up_l_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.lip_crnr_low_l_ctrl">
+<code class="descname">lip_crnr_low_l_ctrl</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.lip_crnr_low_l_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.lip_crnr_r_ctrl">
+<code class="descname">lip_crnr_r_ctrl</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.lip_crnr_r_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.lip_crnr_up_r_ctrl">
+<code class="descname">lip_crnr_up_r_ctrl</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.lip_crnr_up_r_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.lip_crnr_low_r_ctrl">
+<code class="descname">lip_crnr_low_r_ctrl</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.lip_crnr_low_r_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.lip_up_l_ctrls">
+<code class="descname">lip_up_l_ctrls</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.lip_up_l_ctrls" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of  prc.Dag(s)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.lip_low_l_ctrls">
+<code class="descname">lip_low_l_ctrls</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.lip_low_l_ctrls" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of  prc.Dag(s)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.lip_up_r_ctrls">
+<code class="descname">lip_up_r_ctrls</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.lip_up_r_ctrls" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of  prc.Dag(s)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_mouth.MouthRig.lip_low_r_ctrls">
+<code class="descname">lip_low_r_ctrls</code><a class="headerlink" href="#pkrig2.facerig_mouth.MouthRig.lip_low_r_ctrls" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of  prc.Dag(s)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.facerig_mouth.test">
+<code class="descclassname">pkrig2.facerig_mouth.</code><code class="descname">test</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.facerig_mouth.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>A run test function.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="facerig_nose.html" class="btn btn-neutral float-right" title="facerig_nose" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="facerig_eyebrow.html" class="btn btn-neutral float-left" title="facerig_eyebrow" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, peck
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

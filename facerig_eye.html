@@ -1,0 +1,768 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>facerig_eye &mdash; pkrig2 20210508 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="facerig_eyebrow" href="facerig_eyebrow.html" />
+    <link rel="prev" title="facerig_head" href="facerig_head.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pkrig2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pkrig2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="core.html">core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="naming_tools.html">naming_tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skin_tools.html">skin_tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_base.html">rig_base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_fk.html">genrig_fk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_spline_fk.html">genrig_spline_fk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genrig_string_ik.html">genrig_string_ik</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_main_group.html">rig_main_group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rig_root.html">rig_root</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_head.html">facerig_head</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">facerig_eye</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_eyebrow.html">facerig_eyebrow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_mouth.html">facerig_mouth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="facerig_nose.html">facerig_nose</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pkrig2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">pkrig2</a> &raquo;</li>
+        
+      <li>facerig_eye</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/facerig_eye.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pkrig2.facerig_eye">
+<span id="facerig-eye"></span><h1>facerig_eye<a class="headerlink" href="#module-pkrig2.facerig_eye" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pkrig2.facerig_eye.EyeballRig">
+<em class="property">class </em><code class="descclassname">pkrig2.facerig_eye.</code><code class="descname">EyeballRig</code><span class="sig-paren">(</span><em>zone_tmpjnt</em>, <em>main_tmpjnt</em>, <em>iris_tmpjnt</em>, <em>pupil_tmpjnt</em>, <em>eye_spec_tmplocs</em>, <em>desc</em>, <em>side</em>, <em>ctrl_grp_parent</em>, <em>skin_parent</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.facerig_eye.EyeballRig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rig_base.html#pkrig2.rig_base.BaseRig" title="pkrig2.rig_base.BaseRig"><code class="xref py py-class docutils literal notranslate"><span class="pre">pkrig2.rig_base.BaseRig</span></code></a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>zone_tmpjnt</strong> (<em>str</em>) – Orient joint in the conept of Z forward.</li>
+<li><strong>main_tmpjnt</strong> (<em>str</em>) – Orient joint in the conept of Z forward.</li>
+<li><strong>iris_tmpjnt</strong> (<em>str</em>) – Orient joint in the conept of Z forward.</li>
+<li><strong>pupil_tmpjnt</strong> (<em>str</em>) – Orient joint in the conept of Z forward.</li>
+<li><strong>eye_spec_tmplocs</strong> (<em>list</em>) – Needs just nodes’ positions. The created joints
+are oriented to the eye joint automatically.</li>
+<li><strong>desc</strong> (<em>str</em>) – </li>
+<li><strong>side</strong> (<em>prc.Side</em>) – </li>
+<li><strong>ctrl_grp_parent</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>skin_parent</strong> (<em>prc.Dag</em>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyeballRig.meta">
+<code class="descname">meta</code><a class="headerlink" href="#pkrig2.facerig_eye.EyeballRig.meta" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyeballRig.world_ori">
+<code class="descname">world_ori</code><a class="headerlink" href="#pkrig2.facerig_eye.EyeballRig.world_ori" title="Permalink to this definition">¶</a></dt>
+<dd><p>This has to be oriented to the world node,
+a placement.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyeballRig.zone_jnt">
+<code class="descname">zone_jnt</code><a class="headerlink" href="#pkrig2.facerig_eye.EyeballRig.zone_jnt" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Joint</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyeballRig.main_jnt">
+<code class="descname">main_jnt</code><a class="headerlink" href="#pkrig2.facerig_eye.EyeballRig.main_jnt" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Joint</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyeballRig.iris_jnt">
+<code class="descname">iris_jnt</code><a class="headerlink" href="#pkrig2.facerig_eye.EyeballRig.iris_jnt" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Joint</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyeballRig.pupil_jnt">
+<code class="descname">pupil_jnt</code><a class="headerlink" href="#pkrig2.facerig_eye.EyeballRig.pupil_jnt" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Joint</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyeballRig.spec_jnts">
+<code class="descname">spec_jnts</code><a class="headerlink" href="#pkrig2.facerig_eye.EyeballRig.spec_jnts" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of prc.Joint(s)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyeballRig.zone_ctrl">
+<code class="descname">zone_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyeballRig.zone_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyeballRig.main_ctrl">
+<code class="descname">main_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyeballRig.main_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyeballRig.iris_ctrl">
+<code class="descname">iris_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyeballRig.iris_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyeballRig.pupil_ctrl">
+<code class="descname">pupil_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyeballRig.pupil_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyeballRig.spec_ctrls">
+<code class="descname">spec_ctrls</code><a class="headerlink" href="#pkrig2.facerig_eye.EyeballRig.spec_ctrls" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of prc.Dag(s)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.facerig_eye.EyelidRig">
+<em class="property">class </em><code class="descclassname">pkrig2.facerig_eye.</code><code class="descname">EyelidRig</code><span class="sig-paren">(</span><em>eye_pos_tmploc</em>, <em>upper_main_tmploc</em>, <em>lower_main_tmploc</em>, <em>ctrl_pos_tmpcrv</em>, <em>socket_pos_tmpcrv</em>, <em>target_tmpcrvs</em>, <em>socket_tmpcrvs</em>, <em>target_75_tmpcrvs</em>, <em>target_50_tmpcrvs</em>, <em>target_25_tmpcrvs</em>, <em>main_tmpcrv</em>, <em>socket_tmpcrv</em>, <em>desc</em>, <em>side</em>, <em>ctrl_grp_parent</em>, <em>jnt_grp_parent</em>, <em>still_grp_parent</em>, <em>skin_parent</em>, <em>along_eye_axis</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rig_base.html#pkrig2.rig_base.BaseRig" title="pkrig2.rig_base.BaseRig"><code class="xref py py-class docutils literal notranslate"><span class="pre">pkrig2.rig_base.BaseRig</span></code></a></p>
+<p>EylidRig</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>eye_pos_tmploc</strong> (<em>str</em>) – A position/orientation of eyeball.</li>
+<li><strong>upper_main_tmploc</strong> (<em>str</em>) – Is used as an orientation of the upper lid
+controllers <strong>It is oriented in the concept of UDOI</strong></li>
+<li><strong>lower_main_tmploc</strong> (<em>str</em>) – Is used as an orientation of the lower lid
+controllers <strong>It is oriented in the concept of UDOI</strong></li>
+<li><strong>ctrl_pos_tmpcrv</strong> (<em>str</em>) – A 12 spans 1 degree curve.</li>
+<li><strong>socket_pos_tmpcrv</strong> (<em>str</em>) – An 8 spans 1 degree curve.</li>
+<li><strong>target_tmpcrvs</strong> (<em>list</em>) – A list of 1 degree curves for upper and
+lower part.
+The upper one starts at the inner corner toward to
+the outer corner.
+The lower one starts at a vertex next to the outer corner toward
+to the vertex before the inner corner.</li>
+<li><strong>socket_tmpcrvs</strong> (<em>list</em>) – A list of 1 degree curves for upper and
+lower part.</li>
+<li><strong>target_75_tmpcrvs</strong> (<em>list</em>) – A list of 1 degree curves for upper and
+lower part.</li>
+<li><strong>target_50_tmpcrvs</strong> (<em>list</em>) – A list of 1 degree curves for upper and
+lower part.</li>
+<li><strong>target_25_tmpcrvs</strong> (<em>list</em>) – A list of 1 degree curves for upper and
+lower part.</li>
+<li><strong>main_tmpcrv</strong> (<em>str</em>) – A 12 spans cubic circle.</li>
+<li><strong>socket_tmpcrv</strong> (<em>str</em>) – A 8 spans cubic circle.</li>
+<li><strong>desc</strong> (<em>str</em>) – </li>
+<li><strong>side</strong> (<em>prc.Side</em>) – </li>
+<li><strong>ctrl_grp_parent</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>jnt_grp_parent</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>still_grp_parent</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>skin_parent</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>along_eye_axis</strong> (<em>bool</em>) – If this is True all root lid pivot joints are
+build along the X axis of the eyeball.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.meta">
+<code class="descname">meta</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.meta" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.jnt_grp">
+<code class="descname">jnt_grp</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.jnt_grp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.still_grp">
+<code class="descname">still_grp</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.still_grp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.main_jnt">
+<code class="descname">main_jnt</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.main_jnt" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Joint</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.shape_driver_grp">
+<code class="descname">shape_driver_grp</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.shape_driver_grp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.main_ctrl">
+<code class="descname">main_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.main_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.uplid_ctrl">
+<code class="descname">uplid_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.uplid_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.lowlid_ctrl">
+<code class="descname">lowlid_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.lowlid_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.incnr_lidtar_ctrl">
+<code class="descname">incnr_lidtar_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.incnr_lidtar_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.inupcnr_lidtar_ctrl">
+<code class="descname">inupcnr_lidtar_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.inupcnr_lidtar_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.upin_lidtar_ctrl">
+<code class="descname">upin_lidtar_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.upin_lidtar_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.up_lidtar_ctrl">
+<code class="descname">up_lidtar_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.up_lidtar_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.upout_lidtar_ctrl">
+<code class="descname">upout_lidtar_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.upout_lidtar_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.outupcnr_lidtar_ctrl">
+<code class="descname">outupcnr_lidtar_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.outupcnr_lidtar_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.outcnr_lidtar_ctrl">
+<code class="descname">outcnr_lidtar_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.outcnr_lidtar_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.outlowcnr_lidtar_ctrl">
+<code class="descname">outlowcnr_lidtar_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.outlowcnr_lidtar_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.lowout_lidtar_ctrl">
+<code class="descname">lowout_lidtar_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.lowout_lidtar_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.low_lidtar_ctrl">
+<code class="descname">low_lidtar_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.low_lidtar_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.lowin_lidtar_ctrl">
+<code class="descname">lowin_lidtar_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.lowin_lidtar_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pkrig2.facerig_eye.EyelidRig.inlowcnr_lidtar_ctrl">
+<code class="descname">inlowcnr_lidtar_ctrl</code><a class="headerlink" href="#pkrig2.facerig_eye.EyelidRig.inlowcnr_lidtar_ctrl" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">prc.Dag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pkrig2.facerig_eye.TwoEyesRig">
+<em class="property">class </em><code class="descclassname">pkrig2.facerig_eye.</code><code class="descname">TwoEyesRig</code><span class="sig-paren">(</span><em>head_tmpjnt</em>, <em>left_zone_tmpjnt</em>, <em>left_main_tmpjnt</em>, <em>left_iris_tmpjnt</em>, <em>left_pupil_tmpjnt</em>, <em>left_eye_spec_tmplocs</em>, <em>right_zone_tmpjnt</em>, <em>right_main_tmpjnt</em>, <em>right_iris_tmpjnt</em>, <em>right_pupil_tmpjnt</em>, <em>right_eye_spec_tmplocs</em>, <em>left_eye_pos_tmploc</em>, <em>left_upper_main_tmploc</em>, <em>left_lower_main_tmploc</em>, <em>left_ctrl_pos_tmpcrv</em>, <em>left_socket_pos_tmpcrv</em>, <em>left_target_tmpcrvs</em>, <em>left_socket_tmpcrvs</em>, <em>left_target_75_tmpcrvs</em>, <em>left_target_50_tmpcrvs</em>, <em>left_target_25_tmpcrvs</em>, <em>left_main_tmpcrv</em>, <em>left_socket_tmpcrv</em>, <em>right_eye_pos_tmploc</em>, <em>right_upper_main_tmploc</em>, <em>right_lower_main_tmploc</em>, <em>right_ctrl_pos_tmpcrv</em>, <em>right_socket_pos_tmpcrv</em>, <em>right_target_tmpcrvs</em>, <em>right_socket_tmpcrvs</em>, <em>right_target_75_tmpcrvs</em>, <em>right_target_50_tmpcrvs</em>, <em>right_target_25_tmpcrvs</em>, <em>right_main_tmpcrv</em>, <em>right_socket_tmpcrv</em>, <em>ctrl_grp_parent</em>, <em>skin_parent</em>, <em>still_parent</em>, <em>along_eye_axis</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.facerig_eye.TwoEyesRig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="rig_base.html#pkrig2.rig_base.BaseRig" title="pkrig2.rig_base.BaseRig"><code class="xref py py-class docutils literal notranslate"><span class="pre">pkrig2.rig_base.BaseRig</span></code></a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.facerig_eye.generate_lid_joints_on_cvs">
+<code class="descclassname">pkrig2.facerig_eye.</code><code class="descname">generate_lid_joints_on_cvs</code><span class="sig-paren">(</span><em>lid_curve</em>, <em>eyeball_jnt</em>, <em>along_axis</em><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.facerig_eye.generate_lid_joints_on_cvs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gerates eyelid joints to the positions of CVs of the given curve.
+If along_axis is True, root joints are positioned along the x  axis of
+the given eyeball_jnt else root joitns are positioned at the position of
+the given eyball_jnt.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lid_curve</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>eyeball_jnt</strong> (<em>prc.Dag</em>) – </li>
+<li><strong>along_axis</strong> (<em>bool</em>) – Root joint is placed along the X axis of the
+eyeball_jnt is this is True else is place at the position of
+the eyeball_jnt.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A list of root joints(prc.Joint).
+list: A list of tip joins(prc.Joint).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pkrig2.facerig_eye.test">
+<code class="descclassname">pkrig2.facerig_eye.</code><code class="descname">test</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pkrig2.facerig_eye.test" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="facerig_eyebrow.html" class="btn btn-neutral float-right" title="facerig_eyebrow" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="facerig_head.html" class="btn btn-neutral float-left" title="facerig_head" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, peck
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
