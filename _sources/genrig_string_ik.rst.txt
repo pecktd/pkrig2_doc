@@ -1,0 +1,7 @@
+genrig\_string_ik
+==============
+
+.. automodule:: pkrig2.genrig_string_ik
+    :members:
+    :undoc-members:
+    :show-inheritance:

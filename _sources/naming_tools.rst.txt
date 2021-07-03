@@ -1,0 +1,7 @@
+naming\_tools
+==============
+
+.. automodule:: pkrig2.naming_tools
+    :members:
+    :undoc-members:
+    :show-inheritance:

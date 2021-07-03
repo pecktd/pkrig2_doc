@@ -1,0 +1,7 @@
+genrig\_fk
+==============
+
+.. automodule:: pkrig2.genrig_fk
+    :members:
+    :undoc-members:
+    :show-inheritance:

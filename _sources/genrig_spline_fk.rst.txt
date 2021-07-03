@@ -1,0 +1,7 @@
+genrig\_spline_fk
+==============
+
+.. automodule:: pkrig2.genrig_spline_fk
+    :members:
+    :undoc-members:
+    :show-inheritance:

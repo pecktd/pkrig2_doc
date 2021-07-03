@@ -1,0 +1,7 @@
+rig\_main\_group
+==============
+
+.. automodule:: pkrig2.rig_main_group
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+skin\_tools
+==============
+
+.. automodule:: pkrig2.skin_tools
+    :members:
+    :undoc-members:
+    :show-inheritance:

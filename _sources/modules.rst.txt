@@ -1,0 +1,21 @@
+pkrig2
+======
+
+.. toctree::
+   :maxdepth: 4
+
+   core
+   naming_tools
+   utils
+   skin_tools
+   rig_base
+   genrig_fk
+   genrig_spline_fk
+   genrig_string_ik
+   rig_main_group
+   rig_root
+   facerig_head
+   facerig_eye
+   facerig_eyebrow
+   facerig_mouth
+   facerig_nose

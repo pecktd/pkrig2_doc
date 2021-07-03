@@ -1,0 +1,7 @@
+facerig\_mouth
+==============
+
+.. automodule:: pkrig2.facerig_mouth
+    :members:
+    :undoc-members:
+    :show-inheritance:

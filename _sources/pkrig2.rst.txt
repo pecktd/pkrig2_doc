@@ -1,0 +1,125 @@
+pkrig2 package
+==============
+
+Submodules
+----------
+
+pkrig2.core module
+------------------
+
+.. automodule:: pkrig2.core
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+pkrig2.utils module
+-------------------
+
+.. automodule:: pkrig2.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+pkrig2.naming\_tools module
+---------------------------
+
+.. automodule:: pkrig2.naming_tools
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+pkrig2.skin\_tools module
+-------------------------
+
+.. automodule:: pkrig2.skin_tools
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+pkrig2.rig\_base module
+-----------------------
+
+.. automodule:: pkrig2.rig_base
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+pkrig2.genrig\_fk module
+-----------------------
+
+.. automodule:: pkrig2.genrig_fk
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+pkrig2.genrig\_spline_fk module
+-----------------------
+
+.. automodule:: pkrig2.genrig_spline_fk
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+pkrig2.rig\_main\_group module
+------------------------------
+
+.. automodule:: pkrig2.rig_main_group
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+pkrig2.rig\_root module
+-----------------------
+
+.. automodule:: pkrig2.rig_root
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+pkrig2.facerig\_head module
+---------------------------
+
+.. automodule:: pkrig2.facerig_head
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+pkrig2.facerig\_eye module
+--------------------------
+
+.. automodule:: pkrig2.facerig_eye
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+pkrig2.facerig\_eyebrow module
+------------------------------
+
+.. automodule:: pkrig2.facerig_eyebrow
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+pkrig2.facerig\_mouth module
+------------------------------
+
+.. automodule:: pkrig2.facerig_mouth
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+pkrig2.facerig\_nose module
+------------------------------
+
+.. automodule:: pkrig2.facerig_nose
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pkrig2
+    :members:
+    :undoc-members:
+    :show-inheritance:

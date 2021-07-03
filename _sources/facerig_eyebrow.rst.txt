@@ -1,0 +1,7 @@
+facerig\_eyebrow
+==============
+
+.. automodule:: pkrig2.facerig_eyebrow
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+core
+==============
+
+.. automodule:: pkrig2.core
+    :members:
+    :undoc-members:
+    :show-inheritance:
